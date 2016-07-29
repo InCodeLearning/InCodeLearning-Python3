@@ -1,9 +1,9 @@
 folders:
 
--array
--linkedlist
--heap
--string
--graph
--tree
--hashtables
+- array
+- linkedlist
+- heap
+- string
+- graph
+- tree
+- hashtables
