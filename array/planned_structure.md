@@ -1,7 +1,9 @@
---array
---linkedlist
---heap
---string
---graph
---tree
---hashtables
+folders:
+
+-array
+-linkedlist
+-heap
+-string
+-graph
+-tree
+-hashtables
