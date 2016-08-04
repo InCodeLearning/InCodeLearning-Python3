@@ -8,6 +8,7 @@ do
   do
     echo ">>>>>>>> testing $py_file"
     python $py_file | grep Traceback
+    pep8 --first $py_file
   done
 done
 

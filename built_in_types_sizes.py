@@ -11,12 +11,12 @@ numeric_types = {
     "int_max36": 0x7FFFFFFFF,                           # 32
     # explicit line break with \ after operators
     "int 1": \
-        1,                                              # 28
+    1,                                                  # 28
     "int_max32": 0x7FFFFFF,                             # 28
     # 12 bytes hex literal on each line, 36 bytes, 288 bits
     "int_36bytes": ('0x7FFFFFFFFFFFFFFFFFFFFFFF'       # 123
-                       'FFFFFFFFFFFFFFFFFFFFFFFF'
-                       'FFFFFFFFFFFFFFFFFFFFFFFF'),
+                    'FFFFFFFFFFFFFFFFFFFFFFFF'
+                    'FFFFFFFFFFFFFFFFFFFFFFFF'),
     # implied line continuation in parenthesis, brackets, and braces
     "float": 0.0,                                       # 24
     "decimal": decimal.Decimal(0),                      # 104
