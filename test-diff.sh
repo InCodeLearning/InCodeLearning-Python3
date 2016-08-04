@@ -1,9 +1,15 @@
 #!/bin/bash
 branches=(jesse)
 for branch in ${branches[@]}
-do 
+do
+  git checkout $branch
+  echo ">>>> testing branch $branch"
   for py_file in $(git diff --name-only $branch dev | grep .py)
   do
-    python $py_file
+    echo ">>>>>>>> testing $py_file"
+    python $py_file | grep Traceback
   done
 done
+
+# compare each of the contributor's branch with dev 
+# execute all the newly committed python codes
