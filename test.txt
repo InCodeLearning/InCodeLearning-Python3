@@ -1,1 +1,16 @@
 This is a test to see which branch it goes. Please ignore it.
+
+### About ASCII
+"在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从0000000到11111111。ASCII码一共规定了128个字符的编码，比如空格"SPACE"是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包括32个不能打印出来的控制符号），只占用了一个字节的后面7位，最前面的1位统一规定为0。" (Ref: http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+
+### Integers in Python
+"Usually plain integers are at least 32-bit long (4 bytes).To see how many bytes a integer needs to be represented, starting in Python 3.1, the int.bit length() method is available."
+
+### Comparing floats in Python
+* 0.3 * 3
+* divmod(), //, %
+* round()
+* from fractions import Fraction
+* from decimal import Decimal
+
+### 
