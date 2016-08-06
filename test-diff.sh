@@ -1,10 +1,10 @@
 #!/bin/bash
-branches=(jesse)
+branches=(jesse Yong mingzhangyang)
 for branch in ${branches[@]}
 do
   git checkout $branch
   echo ">>>> testing branch $branch"
-  for py_file in $(git diff --name-only $branch dev | grep .py)
+  for py_file in $(git diff --name-only $branch dev | grep '\.py$')
   do
     echo ">>>>>>>> testing $py_file"
     python $py_file | grep Traceback
