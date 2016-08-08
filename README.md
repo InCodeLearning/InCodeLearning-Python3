@@ -10,7 +10,7 @@ Weekly Google hangout video conference time: Sunday 7am PST.
 
 ## Deadlines
 
-- Every Monday 12pm noon PST: please update your weekly meeting agenda or study plan.
+- Every Tuesday 9am PST: please update your weekly meeting agenda or study plan focusing on one small topic which your 50 lines of code will cover.
 - Every Friday 9am PST: GitHub commit(s) and pull request with at least 50 lines of python code or comments.
 - Every Sunday 7am PST: Before the video conference, please study all team members PR and prepare for questions at the meeting.
 
