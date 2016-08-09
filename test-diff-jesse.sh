@@ -1,5 +1,5 @@
 #!/bin/bash
-branches=(jesse Yong mingzhangyang)
+branches=(jesse) 
 for branch in ${branches[@]}
 do
   git checkout $branch
@@ -11,6 +11,6 @@ do
     pep8 --first $py_file
   done
 done
-
+git checkout jesse
 # compare each of the contributor's branch with dev 
 # execute all the newly committed python codes

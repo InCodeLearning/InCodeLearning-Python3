@@ -16,6 +16,10 @@ print(repr("'中文Àabc"), repr([1, 2]))  # string representation
 
 
 class Person:
+    '''
+    Toy class representing a person with gender (male/female)
+    and age (integer).
+    '''
     def __init__(self, gender, age):
         self.gender = gender
         self.age = age
@@ -30,4 +34,11 @@ Tom = Person("male", 34)
 print(repr(Tom))
 
 print(bin(10))
-print(bin(Tom)) # use __index__ of object
+print(bin(Tom))  # use __index__ of object
+
+# import built_in_functions at python shell will run this file
+# help() intended for interactive use will work in py file
+# but do not know how to exit
+
+# in python shell, from built_in_functions import Person
+help(Person)
