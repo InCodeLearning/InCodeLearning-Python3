@@ -1,3 +1,5 @@
+# usage of defaultdict and & in sets
+
 from collections import defaultdict
 
 a = [[1, 2], [3, 4], [3, 6]]
@@ -12,7 +14,8 @@ for item in a:
 for item in b:
     dict_b[item[0]].append(item)
 
-common_keys = set(dict_a.keys()) & set(dict_b.keys())  # get common first element in each list
+# get common first element in each list
+common_keys = set(dict_a.keys()) & set(dict_b.keys())
 
 for key in common_keys:
     print("key: {0}, dict a: {1}, dict b: {2} \n".format(key, dict_a[key], dict_b[key]))
