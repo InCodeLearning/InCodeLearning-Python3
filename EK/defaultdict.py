@@ -8,6 +8,9 @@ b = [[1, 2], [2, 3], [3, 5]]
 dict_a = defaultdict(list)
 dict_b = defaultdict(list)
 
+print(dict_a)
+print(dict_b)
+
 for item in a:
     dict_a[item[0]].append(item)
 
