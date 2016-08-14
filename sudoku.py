@@ -99,7 +99,7 @@ def check_sudoku(sudlist) :
     return True
 
 
-               [1.5, 1]]
+#               [1.5, 1]]
 
 def check_sudoku(grid):
     gridSize = len(grid)    # Extract size of grid
