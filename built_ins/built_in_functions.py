@@ -58,7 +58,7 @@ bytearray_types = {
     # "string": ("bytearray", "utf-8"),
     "integer_size": 10,
     # object conforming buffer interface to do
-    "iterable": [1, 2, 3 ,4]
+    "iterable": [1, 2, 3, 4]
 }
 print("class bytearrays")
 for k, v in bytearray_types.items():
@@ -75,14 +75,16 @@ print(' ', bytes(rb'34\t') == bytes([3, 4, 92, 116]))        # False
 print(' ', bytes(b'\x03\x04\\t') == bytes([3, 4, 92, 116]))  # True
 
 print("callable() since 3.2")
+
+
 def test():
     print("hello from test")
 print(' ', callable(test))
-print(' ', callable(Tom))  
+print(' ', callable(Tom))
 # instances are callable if class has __call__() method
 print(' ', callable(Person))  # classes are callable, return instance
 
 print("chr() dec int to character, valid 0 - 0x10FFFF")
 print(' ', chr(97))
 print(' ', ord('a'))
-# check wiki code point, 17 code planes, 17x2^16 = 1,114,112 
+# check wiki code point, 17 code planes, 17x2^16 = 1,114,112

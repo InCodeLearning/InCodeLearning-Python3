@@ -1,12 +1,6 @@
-
-# coding: utf-8
-
-# ### Math module in Python
-# ##### Mingzhang Yang
-# ##### 8-13-2016
-
-# > The math module in Python provides access to the mathematical functions defined by the C standard.
-# These functions cannot be used with complex numbers; use the functions of the same name from the cmath module if you require support for complex numbers. 
+# provides access to the mathematical functions defined by the C standard.
+# These functions cannot be used with complex numbers;
+# use the functions of the same name from the cmath module.
 # Except when explicitly noted otherwise, all return values are **floats**.
 
 # In[1]:
@@ -29,12 +23,9 @@ print("-"*20)
 print(math.floor(2.1))
 print(math.floor(2.8))
 
-
-# ----------
-# __*math.fmod(x, y) vs (x % y)*__
-# 
 # math.fmod(x, y)
-# > Return fmod(x, y), as defined by the platform C library. Note that the Python expression x % y may not return the same result. The intent of the C standard is that fmod(x, y) be exactly (mathematically; to infinite precision) equal to x - n*y for some integer n such that the result has the __same sign as x and magnitude less than abs(y)__. __Python’s x % y returns a result with the sign of y instead__, and may not be exactly computable for float arguments. For example, fmod(-1e-100, 1e100) is -1e-100, but the result of Python’s -1e-100 % 1e100 is 1e100-1e-100, which cannot be represented exactly as a float, and rounds to the surprising 1e100. For this reason, function fmod() is generally preferred when working with floats, while Python’s x % y is preferred when working with integers.
+# Note that the Python expression x % y may not return the same result.
+# The intent of the C standard is that fmod(x, y) be exactly (mathematically; to infinite precision) equal to x - n*y for some integer n such that the result has the __same sign as x and magnitude less than abs(y)__. __Python’s x % y returns a result with the sign of y instead__, and may not be exactly computable for float arguments. For example, fmod(-1e-100, 1e100) is -1e-100, but the result of Python’s -1e-100 % 1e100 is 1e100-1e-100, which cannot be represented exactly as a float, and rounds to the surprising 1e100. For this reason, function fmod() is generally preferred when working with floats, while Python’s x % y is preferred when working with integers.
 
 # In[4]:
 

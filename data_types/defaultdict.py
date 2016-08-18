@@ -24,7 +24,7 @@ dict_a[10].append((2, 3))  # add a tuple into the list
 
 print("after adding elements\n ", dict_a)
 
-print("a normal dict\n ", {1:[1, 2], 3:[3, 4]})
+print("a normal dict\n ", {1: [1, 2], 3: [3, 4]})
 # get common first element in each list
 common_keys = set(dict_a.keys()) & set(dict_b.keys())
 print("common keys")
