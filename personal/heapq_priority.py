@@ -1,6 +1,7 @@
 # priority queue
 
-# A priority queue is an abstract data type (ADT) which is like a regular queue or stack data structure, but where additionally each element has a priority associated with it.
+# A priority queue is an abstract data type (ADT) which is like a regular queue or stack data structure,
+#  but where additionally each element has a priority associated with it.
 try:
     import Queue as Q  # ver. < 3.0
 except ImportError:
@@ -14,7 +15,9 @@ while not q.empty():
 
 # heapq :
 
-# binary trees for which every parent node has a value less than or equal to any of its children. This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, counting elements from zero.
+# binary trees for which every parent node has a value less than or equal to any of its children.
+# This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k,
+# counting elements from zero.
 #
 # basic functions:
 #
@@ -25,7 +28,8 @@ while not q.empty():
 #
 # heapq.heappop(heap)
 #
-# Pop and return the smallest item from the heap, maintaining the heap invariant. If the heap is empty, IndexError is raised. To access the smallest item without popping it, use heap[0].
+# Pop and return the smallest item from the heap, maintaining the heap invariant.
+# If the heap is empty, IndexError is raised. To access the smallest item without popping it, use heap[0].
 import heapq
 
 
@@ -40,7 +44,8 @@ print heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])
 #
 #     heapq.heappushpop(heap, item)
 #
-#     Push item on the heap, then pop and return the smallest item from the heap. The combined action runs more efficiently thanheappush() followed by a separate call to heappop().
+# Push item on the heap, then pop and return the smallest item from the heap.
+# The combined action runs more efficiently thanheappush() followed by a separate call to heappop().
 #
 
 import heapq
