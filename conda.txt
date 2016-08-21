@@ -1,0 +1,24 @@
+# A list of resources and simple examples on conda/anaconda
+# By YL on 08/07/2016
+
+1,
+anaconda can be downloaded here: https://www.continuum.io/downloads
+
+The installation guide is also in the above link.
+
+2.
+User guide is here: https://docs.continuum.io/anaconda/
+
+3.
+Here is a useful conda cheat sheet: http://conda.pydata.org/docs/using/cheatsheet.html
+
+4.
+Here is how to mange python versions via conda: http://conda.pydata.org/docs/py2or3.html
+For example:
+    a)
+    make the new environment for Python 3.5
+    conda create -n py35 python=3.5 anaconda
+    b)
+    switch to the new environment
+    source activate py35
+
