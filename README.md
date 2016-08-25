@@ -20,5 +20,6 @@ You must be able to strictly follow these deadlines to continuously participate 
 
 - Cannot repeat committed code in `dev` branch.
 - Must be more than 50 lines weekly, comments count.
+- If your comments contain languages other than English, you must translate those into English and you are welcome to keep both languages in your comments.
 - Must be bug free, no `Traceback` errors.
 - Must follow PEP 8 guidelines, see [Resource](Resource.md) for links to PEP 8 guidelines and checker resource.
