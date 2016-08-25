@@ -6,6 +6,8 @@ method definition, which becomes the __doc__ special attribute of
 that object.
 Maximum line length inside docstring is 72 characters.
 Triple double quotes are recommended.
+Should contain usage message as a standalone script,
+similar to when you type `ls --help` on linux command line.
 """
 
 import sys
