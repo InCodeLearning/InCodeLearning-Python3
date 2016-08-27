@@ -2,4 +2,4 @@
 *.pyo
 *.pyc
 .ipynb_checkpoints/
-test-diff-jesse.sh
+*.sh
