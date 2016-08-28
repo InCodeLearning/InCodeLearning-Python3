@@ -48,6 +48,10 @@ print(9, B != 8)
 print(10, A > B)
 print(11, A + B < C)
 
+# test short circuit in C or Java
+# if 1 < 2 and (a = 2) < 3:
+# unfortunately python does not allow assignment in conditionals
+
 # other functions that return boolean
 
 D = 'abcdef'
@@ -55,6 +59,7 @@ print(12, 'a' in D)
 print(13, 'h' not in D)
 print(14, '' in D)
 print(15, 'abcdef' is D)
+# TODO: create two objects in python having equal contents but separate objects
 print(16, 'abcd' is not D)
 # TODO: isinstance, issubclass
 # TODO: string methods: tring methods, isslnum, isalpha, isdecimal, .etc
@@ -88,7 +93,7 @@ def __ge__(self, other):
 p1 = 3
 p2 = 4
 print(21, p1.__lt__(p2))    # calls int.__lt__()
-print(22, __lt__(p1, p2))   # calls __lt__()
+print(22, __lt__(p1, p2))   # calls __lt__() line 73 above
 print(23, __le__(p1, p2))
 print(24, __eq__(p1, p2))
 print(25, __ne__(p1, p2))

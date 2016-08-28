@@ -17,7 +17,7 @@ class FooTestSetupTearDown(unittest.TestCase):
         """ Setting up for the test """
         print("FooTest:setUp_:begin")
         # do something begin ...
-        testname = self.shortDescription()
+        testname = self.shortDescription()   # takes docstring from testcase
         if testname == "Test routine A":
             print("setting up for test A")
         elif testname == "Test routine B":
@@ -64,6 +64,7 @@ class FooTestSetupTearDown(unittest.TestCase):
 
         argFoo = {'narf': 456, 'poink': 789}
         argBar = {'narf': 456, 'poink': 789}
+        # Todo: assertDictContainsSubset deprecated, find replacement
         # self.assertDictContainsSubset(argFoo, argBar)
         print("FooTest:testB")
 
@@ -81,6 +82,7 @@ class BarTest(unittest.TestCase):
     def tc1(self):
         """Test BarTest tc1"""
         self.skipTest("Skip over the rst of the test")
+        # use fail when you know the feature is not ready to be tested yet
         self.fail("Force this routine to fail")
         self.assertFalse(False)
         print("Running BarTest")
@@ -95,6 +97,9 @@ newSuite.addTest(BarTest("tc1"))
 fooRunner = unittest.TextTestRunner(descriptions=True)
 fooRunner.run(newSuite)
 
+# ss in output signals the two skipped tests
+
 if __name__ == '__main__':
     unittest.main()
-    # fooSuite = unittest.TestLoader().loadTestsFromTestCase(FooTest)
+    # Todo: with line below did not see run 2 tests twice
+    fooSuite = unittest.TestLoader().loadTestsFromTestCase(FooTest)
