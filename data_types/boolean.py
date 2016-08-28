@@ -84,7 +84,7 @@ def __ge__(self, other):
 
 p1 = 3
 p2 = 4
-print(21, p1.__lt__(p2))
+# print(21, p1.__lt__(p2))
 print(22, __lt__(p1, p2))
 print(23, __le__(p1, p2))
 print(24, __eq__(p1, p2))
