@@ -67,28 +67,30 @@ print(16, 'abcd' is not D)
 # "rich comparison"  special methods
 
 
-def __eq__(self, other):
-    return not self < other and not other < self
+def __eq__(one, other):
+    # Todo: why not use == ?
+    return not one < other and not other < one
 
 
-def __ne__(self, other):
-    return self < other or other < self     # return not self == other
+def __ne__(one, other):
+    # todo why not use != ?
+    return one < other or other < one     # return not self == other
 
 
-def __lt__(self, other):
-    return self < other
+def __lt__(one, other):
+    return one < other
 
 
-def __le__(self, other):
-    return not self > other
+def __le__(one, other):
+    return not one > other
 
 
-def __gt__(self, other):
-    return other < self
+def __gt__(one, other):
+    return other < one
 
 
-def __ge__(self, other):
-    return not self < other
+def __ge__(one, other):
+    return not one < other
 
 p1 = 3
 p2 = 4
