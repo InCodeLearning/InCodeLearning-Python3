@@ -54,6 +54,7 @@ iterator_seqs = {
     "iterator": iter([]),           # 56
     "tuple": tuple(),               # 48
     "list": list(),                 # 64
+    "bytearray": bytearray()        # 56
 }
 
 for k, v in sorted(iterator_seqs.items()):
