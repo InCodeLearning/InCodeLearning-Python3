@@ -21,4 +21,5 @@ for item in b:
 common_keys = set(dict_a.keys()) & set(dict_b.keys())
 
 for key in common_keys:
-    print("key: {0}, dict a: {1}, dict b: {2} \n".format(key, dict_a[key], dict_b[key]))
+    print("key: {0}, dict a: {1}, dict b: {2} \n".
+          format(key, dict_a[key], dict_b[key]))
