@@ -1,4 +1,9 @@
 import unittest
+# command line interface usage
+# python -m unittest test_module1 test_module2
+# python -m unittest test_module.TestClass
+# python -m unittest test_module.TestClass.test_method
+# python -m unittest [discover] [-v|-s|-p|-t], finds all tests named test*.py
 
 
 class FooTestSetupTearDown(unittest.TestCase):
