@@ -54,6 +54,7 @@ incorrect4 = [['a', 'b', 'c'],
 incorrect5 = [[1, 1.5],
               [1.5, 1]]
 
+
 def check_sudoku(square):
     size = len(square)  # Check_the_#_of_sub_list_in_the list
     row = 0
@@ -82,21 +83,22 @@ def check_sudoku(square):
     return True
 
 
-print (check_sudoku(incorrect))
+print(check_sudoku(incorrect))
 # >>> False
 
-print (check_sudoku(correct))
+print(check_sudoku(correct))
 # >>> True
 
-print (check_sudoku(incorrect2))
+print(check_sudoku(incorrect2))
 # >>> False
 
-print (check_sudoku(incorrect3))
+print(check_sudoku(incorrect3))
 # >>> False
 
-print (check_sudoku(incorrect4))
+print(check_sudoku(incorrect4))
 # >>> False
-print (check_sudoku(incorrect5))
+print(check_sudoku(incorrect5))
+
 
 #############################################
 
@@ -134,7 +136,7 @@ def convert_seconds(num):
     return result
 
 
-print (convert_seconds(3661))
+print(convert_seconds(3661))
 # >>> 1 hour, 1 minute, 1 second
 
 print
@@ -142,6 +144,8 @@ print
 # >>> 2 hours, 2 minutes, 5 seconds
 
 print(convert_seconds(7261.7))
+
+
 # >>> 2 hours, 1 minute, 1.7 seconds
 
 
@@ -159,14 +163,13 @@ print(convert_seconds(7261.7))
 # procedure should return a list of strings that break
 # the source string up by the characters in the
 # splitlist.
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#参考这里的链接
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# reference
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # http://www.willprice.org/2012/11/19/CS101-Homework-4-splitting-strings.html
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Unit4 知识难点
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# keypoints
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 def split_string1(source, splitlist):
     split_words = []
@@ -179,15 +182,15 @@ def split_string1(source, splitlist):
         else:
             word = word + character
 
-if word != '':
-    split_words.append(word)
-    
+    if word != '':
+        split_words.append(word)
+
     return split_words
 
 
 def split_string(source, splitlist):
     word_list = ['']
-    
+
     at_split = False
     for char in source:
         if char in splitlist:
@@ -203,18 +206,18 @@ def split_string(source, splitlist):
                 # char with the last entry in word_list
                 word_list[-1] = word_list[-1] + char
 
-# Once we've filled word list, we'll want to return the list containing all the words
-return word_list
+    # Once we've filled word list, we'll want to return the list containing all the words
+    return word_list
 
 
 out = split_string("This is a test-of the,string separation-code!", " ,!-")
-print (out)
+print(out)
 # >>> ['This', 'is', 'a', 'test', 'of', 'the', 'string', 'separation', 'code']
 
 out = split_string("After  the flood   ...  all the colors came out.", " .")
-print (out)
+print(out)
 # >>> ['After', 'the', 'flood', 'all', 'the', 'colors', 'came', 'out']
 
 out = split_string("First Name,Last Name,Street Address,City,State,Zip Code", ",")
-print (out)
+print(out)
 # >>>['First Name', 'Last Name', 'Street Address', 'City', 'State', 'Zip Code']
