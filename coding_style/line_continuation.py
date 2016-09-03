@@ -3,6 +3,7 @@ Line continuations. Code across multiple lines in Python.
 """
 
 # parentheses, brackets, braces preferred over backslashes
+# note different from docstring, no \r \n
 print('A very long line that cannot fit on one line that'
       'should be less than 80 characters. '
       'Also note this is different than docstring')
