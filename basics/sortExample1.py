@@ -14,16 +14,26 @@ print(count_words("betty bought a bit of butter but the butter was bitter", 3))
 # another example  key order in sorted function
 
 s = 'asdf234GDSdsf23'
-keyfunc = lambda x: (x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(), x.islower(), x)
+
+
+# pep8 never use assign lambda keyfunc = lambda x: ...
+def keyfunc(x):
+    return (x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(),
+            x.islower(), x)
 print("".join(sorted(s, key=keyfunc)))
 
 s = 'asdf234GDSdsf23'
-keyfunc = lambda x: (not x.islower(), not x.isupper(), not (x.isdigit() and int(x) % 2 == 1), x)
-print("".join(sorted(s, key=keyfunc)))
+
+
+def keyfunc2(x):
+    return (not x.islower(), not x.isupper(), not (x.isdigit() and
+            int(x) % 2 == 1), x)
+print("".join(sorted(s, key=keyfunc2)))
 
 # def show(s):
 #     for x in s:
-#         print((x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(), x.islower(), x))
+#         print((x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(),
+# x.islower(), x))
 #
 #
 # print('key=x')
