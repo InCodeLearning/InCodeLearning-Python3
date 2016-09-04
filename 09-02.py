@@ -62,13 +62,13 @@ def check_sudoku(square):
         num = 1
         while num <= size:
             if num not in square[row]:
-                return False  # Check_this since at lease 1 will be in the single sublist
-            num = num + 1
+                return False
+            num += 1
         row = row + 1
     # get column values
     col = 0
-    mycol = []  # Note when you check a list the  procedure need to be carefully managed
-    while col < size:  # Create an empty list and enumerate all elements into this list then creaat a standard to check it
+    mycol = []
+    while col < size:
         row = 0
         while row < size:
             mycol.append(square[row][col])
@@ -77,7 +77,7 @@ def check_sudoku(square):
         while num <= size:
             if num not in mycol:
                 return False
-            num = num + 1
+            num += 1
         mycol = []
         col = col + 1
     return True
@@ -164,12 +164,12 @@ print(convert_seconds(7261.7))
 # the source string up by the characters in the
 # splitlist.
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# reference
+#
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # http://www.willprice.org/2012/11/19/CS101-Homework-4-splitting-strings.html
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# keypoints
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 def split_string1(source, splitlist):
     split_words = []
@@ -197,16 +197,13 @@ def split_string(source, splitlist):
             at_split = True
         else:
             if at_split:
-                # We've now reached the start of the word, time to make a new element in the list
-                word_list.append(char)  # This creates a new element in the array with the value of 'char'
-                # Reset at_split so no more elements are created until we reach a new word
+
+                word_list.append(char)
+
                 at_split = False
             else:
-                # Char is not in splitlist, and we're not at the start of a word, so simply concatenate
-                # char with the last entry in word_list
-                word_list[-1] = word_list[-1] + char
 
-    # Once we've filled word list, we'll want to return the list containing all the words
+                word_list[-1] = word_list[-1] + char
     return word_list
 
 
