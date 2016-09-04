@@ -1,4 +1,5 @@
 # usage of for else
+# else will only break out the first for loop, different java, c
 
 from math import sqrt
 
