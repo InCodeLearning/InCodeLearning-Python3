@@ -1,5 +1,8 @@
 # C source https://github.com/python/cpython/blob/master/Include/listobject.h
 # dynamic array, not linked list
+# Array can only contain same type items,
+# mostly numbers as numpy array, to handle large data sets efficiently
+# list is mutable
 # using list as a queue, not efficient
 queue = [0, 1, 2, 3, 4]
 queue.append(5)
@@ -7,22 +10,19 @@ queue.append(6)
 print(queue)
 queue.pop(0)
 print(queue)  # elements 1-6 shifted left by one O(n) time
-<<<<<<< Updated upstream
-=======
 
 l = [True, 2, 3.5, 5 - 8j, [9, 7, 5], 'python', ('a', 2)]
 
-print(hex(id(l)))  # 0x2564cb0  memory address, may be different .
+print(hex(id(l)))  # 0x2564cb0  memory address (32 bit?), may be different .
 print(len(l))  # 7
+
+# slicing, not including the second slice index
+print(l[:5])  # [True, 2, 3.5, 5-8j, [9, 7, 5]],
 
 # list index
 print(l[0])  # True
 print(l[-7])  # True    list[-n] == list[len(list) - n]
 # print(l[-8]) Error, index out of range, not intuitive
-
-# slicing
-print(l[:5])  # [True, 2, 3.5, 5-8j, [9, 7, 5]]
-# not including the second slice index
 
 print(l[4:-1])  # [[9, 7, 5], 'python'], combination of pos & neg index
 print(l[4:-6])  # [], if 2nd slice index on the left of 1st one
@@ -95,4 +95,3 @@ print(l_new, l_new2)
 # [5, 4, 'python', 3.5, 2, True] [5, 4, 'python', 3.5, 2, True]
 print(hex(id(l)), hex(id(l_new)), hex(id(l_new2)))
 # memory addresses are different.
->>>>>>> Stashed changes
