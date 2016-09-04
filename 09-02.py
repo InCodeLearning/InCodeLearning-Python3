@@ -215,6 +215,6 @@ out = split_string("After  the flood   ...  all the colors came out.", " .")
 print(out)
 # >>> ['After', 'the', 'flood', 'all', 'the', 'colors', 'came', 'out']
 
-out = split_string("First Name,Last Name,Street Address,City,State,Zip Code", ",")
+out = split_string("First Name,Last Name,Street Address,City,State,", ",")
 print(out)
-# >>>['First Name', 'Last Name', 'Street Address', 'City', 'State', 'Zip Code']
+# >>>['First Name', 'Last Name', 'Street Address', 'City', 'State']
