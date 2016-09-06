@@ -27,31 +27,6 @@
 # You may assume the the input is square and contains at
 # least one row and column.
 
-
-
-def check_sudoku(square):
-    length = len(square)
-    row = 0
-    test_case = 1
-    while row < length and test_case < length:
-        if test_case not in square[row]:
-               return False
-        test_case = test_case+1
-        row = row+1
-    col = []
-    list_number = 0
-    test_number = 0
-    while col < length:
-        col.append(square[test_number][list_number])
-        if test_number + 1 in col:
-            return True
-        test_number = test_number + 1
-        list_number = list_number + 1
-
-    else:
-        return False
-
-
 correct = [[1, 2, 3],
            [2, 3, 1],
            [3, 1, 2]]
@@ -79,28 +54,47 @@ incorrect4 = [['a', 'b', 'c'],
 incorrect5 = [[1, 1.5],
               [1.5, 1]]
 
-print
-check_sudoku(incorrect)
+
+def check_sudoku(square):
+    size = len(square)  # Check_the_#_of_sub_list_in_the list
+    row = 0
+    while row < size:
+        num = 1
+        while num <= size:
+            if num not in square[row]:
+                return False
+            num += 1
+        row = row + 1
+    # get column values
+    col = 0
+    mycol = []
+    while col < size:
+        row = 0
+        while row < size:
+            mycol.append(square[row][col])
+            row = row + 1
+        num = 1
+        while num <= size:
+            if num not in mycol:
+                return False
+            num += 1
+        mycol = []
+        col = col + 1
+    return True
+
+
+print(check_sudoku(incorrect))
 # >>> False
 
-print
-check_sudoku(correct)
+print(check_sudoku(correct))
 # >>> True
 
-print
-check_sudoku(incorrect2)
+print(check_sudoku(incorrect2))
 # >>> False
 
-print
-check_sudoku(incorrect3)
+print(check_sudoku(incorrect3))
 # >>> False
 
-print
-check_sudoku(incorrect4)
+print(check_sudoku(incorrect4))
 # >>> False
-print
-check_sudoku(incorrect5)
-# >>> False
-
-
-
+print(check_sudoku(incorrect5))
