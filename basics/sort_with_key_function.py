@@ -1,10 +1,14 @@
 # the usage of key in sort functions
+# key is a function passed to sort, higher order function
+# see test_everything_object.py test_high_order_sort
 
 import collections
 
 
 def count_words(s, n):
     lst = collections.Counter(s.split()).most_common()
+    print(lst)
+    # first sort by counter descending, then by word alphabetically
     lst.sort(key=lambda t: (-t[1], t[0]))
     return lst[:n]
 
@@ -30,24 +34,21 @@ def keyfunc2(x):
             int(x) % 2 == 1), x)
 print("".join(sorted(s, key=keyfunc2)))
 
-# def show(s):
-#     for x in s:
-#         print((x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(),
-# x.islower(), x))
-#
-#
-# print('key=x')
-# s = sorted(s, key=lambda x: x)
-# show(s)
-#
-# print('key=islower()')
-# s = sorted(s, key=lambda x: x.islower())
-# show(s)
-#
-# print('key=isupper()')
-# s = sorted(s, key=lambda x: x.isupper())
-# show(s)
-#
-# print('key=isdigit() and int(x)%2==0')
-# s = sorted(s, key=lambda x: x.isdigit() and int(x) % 2 == 0)
-# show(s)
+        print(x, (x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(), x.islower()))
+
+
+print('key=x')
+s = sorted(s, key=lambda x: x)
+show(s)
+
+print('key=islower()')
+s = sorted(s, key=lambda x: x.islower())
+show(s)
+
+print('key=isupper()')
+s = sorted(s, key=lambda x: x.isupper())
+show(s)
+
+print('key=isdigit() and int(x)%2==0')
+s = sorted(s, key=lambda x: x.isdigit() and int(x) % 2 == 0)
+show(s)
