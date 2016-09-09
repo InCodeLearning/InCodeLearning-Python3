@@ -10,6 +10,7 @@
 # Exception Handling
 # ==================
 
+
 def divide(x, y):
     try:
         result = x / y
