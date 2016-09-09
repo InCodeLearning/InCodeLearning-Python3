@@ -1,3 +1,6 @@
+import sys  # used in Handling Unexpected Errors part
+
+
 # https://docs.python.org/3/tutorial/errors.html?highlight=error%20handle
 
 # Learning Objectives:
@@ -46,6 +49,7 @@ TypeError: unsupported operand type(s) for /: 'int' and 'str'
 
 # Mutiple Exceptions Handling
 # ===========================
+
 
 def divide(x, y):
     try:
@@ -96,6 +100,7 @@ executing finally clause
 # User Defined Exception
 # ======================
 
+
 class Error(Exception):
     """Base class for exceptions in this module."""
     pass
@@ -137,10 +142,9 @@ operand type(s) not supported by /
 executing finally clause
 """
 
+
 # Handling Unexpected Errors
 # ==========================
-
-import sys
 
 
 def divide(x, y):
@@ -156,20 +160,26 @@ def divide(x, y):
         print("operand type(s) not supported by /")
     except:
         print("Unexpected error:", sys.exc_info()[0])
+        # Return information about the most recent exception caught
         raise
     else:
         print("result is", result)
     finally:
         print("executing finally clause")
 
-
 # KeyboardInterrupt
 # =================
 
-while True:
-    try:
-        input("Please enter something: ")
-    except KeyboardInterrupt:
-        print("Program was interrupted from the keyboard.")
-    except:
-        print("Please enter something else: ")
+# Don't run the following code if you don't know
+# how to interrupt the program from the keyboard.
+# Generally, it is Control-C, but this may vary
+# depending on your interpreter.
+
+
+# while True:
+#     try:
+#         input("Please enter something: ")
+#     except KeyboardInterrupt:
+#         print("Program was interrupted from the keyboard.")
+#     except:
+#         print("Please enter something else: ")
