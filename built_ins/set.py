@@ -47,7 +47,8 @@ print(c.issubset(b))  # False
 print(a.issuperset(c))  # True
 print(b.issuperset(c))  # False
 
-""" Frozenset is immutable set, can not use the methods which will change its contents.
+""" Frozenset is immutable set, cannot use the methods which
+will change its contents.
 """
 d = frozenset({2, 5, 3, 7, 10})
 print(d, len(d))   # frozenset({10, 3, 2, 5, 7}) 5
@@ -57,5 +58,3 @@ print(a.difference(d))   # {8, 1}
 print(d.difference(a))    # frozenset({10, 3, 7})
 print(d.intersection(a))  # frozenset({2, 5})
 print(a.intersection(d))   # {2, 5}
-
-

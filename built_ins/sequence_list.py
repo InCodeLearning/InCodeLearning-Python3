@@ -95,8 +95,6 @@ print(hex(id(l)), hex(id(l_new)), hex(id(l_new2)))
 # memory addresses are different.
 
 
-"""  A tuple is an immutable list. Once it is created, it can not be changed.
-     Tuple can use the methods of List, except those which will change the content of the List,
-     such as append(), insert(), pop(), extend(), remove()
-
-"""
+# A tuple is an immutable list. Once it is created, it can not be changed.
+# Except the method, which will change the content of the List,
+# such as insert(), extend(), remove()etc, Tuple can use the methods of List.
