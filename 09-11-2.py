@@ -1,64 +1,62 @@
 # coding=utf-8
-#  Crypto Analysis: Frequency Analysis
-# To analyze encrypted messages, to find out information about the possible
-# algorithm or even language of the clear text message, one could perform
-# frequency analysis. This process could be described as simply counting
-# the number of times a certain symbol occurs in the given text.
-# For example:
-# For the text "test" the frequency of 'e' is 1, 's' is 1 and 't' is 2.
-#
-# The input to the function will be an encrypted body of text that only
-# contains the lowercase letters a-z.
-# As output you should return a list of the normalized frequency
-# for each of the letters a-z.
-# The normalized frequency is simply the number of occurrences, i,
-# divided by the total number of characters in the message, n.
+# By Ashwath from forums
+# A leap year baby is a baby born on Feb 29, which occurs only on a leap year.
+# Define a procedure is_leap_baby that takes 3 inputs: day, month and year
+# and returns True if the date is a leap day (Feb 29 in a valid leap year)
+# and False otherwise.
+# A year that is a multiple of 4 is a leap year unless the year is
+# divisible by 100 but not a multiple of 400 (so, 1900 is not a leap
+# year but 2000 and 2004 are).
+# We also have a wiki link regarding the algorithm to calculate leap years
+# https://en.wikipedia.org/wiki/Leap_year
 
 
-def freq_analysis(message):
-    total_number = len(message)
-    ele = 0
-    dis = []
-    while ele < total_number:
-        count = 0
-        for i in message:
-            if i == message[ele]:
-                count = count + 1
-        ele = ele + 1
-        frequency = float(float(count) / float(total_number))
-        dis.append(frequency)
-    left = 26 - total_number
-    while left > 0:
-        dis.append(left * 0.0)
-        left = left - 1
-    return dis
+def is_leap_baby(day, month, year):  # define a function which use 3 inputs
+    if year == 1900:
+        return False
+    if year % 100 == 0 & year % 400 != 0:
+        return False
+
+    elif year % 4 == 0:
+        if day == 29 and month == 2:
+            return True
+
+    else:
+        return False
 
 
-# Tests
+# The function 'output' prints one of two statements based on whether
+# the is_leap_baby function returned True or False.
 
-print(freq_analysis("abcd"))
-# >>> [0.25, 0.25, 0.25, 0.25, 0.0, ..., 0.0]
-print("""""")
-print(freq_analysis("adca"))
-# >>> [0.5, 0.0, 0.25, 0.25, 0.0, ..., 0.0]
-print("""""")
-print(freq_analysis('bewarethebunnies'))
+def output(status, name):
+    if status:
+        print("%s is one of an extremely rare species."
+              "He is a leap year baby!"
+              % name)
+    else:
+        print("There's nothing special about %s's birthday."
+              "He is not a leap year baby!"
+              % name)
 
 
-# >>> [0.0625, 0.125, 0.0, 0.0, ..., 0.0]
+# Test Cases
 
-
-#################################
-
-#################################
-
-#################################
-
-#################################
-# A more efficiency way to do it.
-def freq_analysis2(message):
-    abc = 'abcdefghijklmnopqrstuvwxyz'
-    freq_list = [0.0] * 26
-    for i in message:
-        freq_list[abc.find(i)] += 1.0 / len(message)
-    return freq_list
+print(output(is_leap_baby(29, 2, 1996), 'Calvin'))
+# >>>Calvin is one of an extremely rare species.
+# He is a leap year baby!
+print(""" """)
+print(output(is_leap_baby(19, 6, 1978), 'Garfield'))
+# >>>There's nothing special about Garfield's birthday.
+# He is not a leap year baby!
+print(""" """)
+print(output(is_leap_baby(29, 2, 2000), 'Hobbes'))
+# >>>Hobbes is one of an extremely rare species.
+#  He is a leap year baby!
+print(""" """)
+print(output(is_leap_baby(29, 2, 1900), 'Charlie Brown'))
+# >>>There's nothing special about Charlie Brown's birthday.
+# He is not a leap year baby!
+print(""" """)
+print(output(is_leap_baby(28, 2, 1976), 'Odie'))
+# >>>There's nothing special about Odie's birthday.
+# He is not a leap year baby!
