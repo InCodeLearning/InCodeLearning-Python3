@@ -103,6 +103,8 @@ fooRunner = unittest.TextTestRunner(descriptions=True)
 fooRunner.run(newSuite)
 
 # ss in output signals the two skipped tests
+# http://stackoverflow.com/questions/419163/what-does-if-name-main-do
+# if import this module, all the print statements will not show
 
 if __name__ == '__main__':
     unittest.main()
