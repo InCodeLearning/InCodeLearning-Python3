@@ -59,7 +59,8 @@ print(12, 'a' in D)
 print(13, 'h' not in D)
 print(14, '' in D)
 print(15, 'abcdef' is D)
-# TODO: create two objects in python having equal contents but separate objects
+# python caches small integers and small strings
+# in python 2.7 3.5, [-5, 256] are cached
 print(16, 'abcd' is not D)
 # TODO: isinstance, issubclass
 # TODO: string methods: tring methods, isslnum, isalpha, isdecimal, .etc
