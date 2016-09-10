@@ -25,10 +25,13 @@ pool = Pool()
 
 # Open the urls in their own threads and return the results
 start = datetime.datetime.now()
+# call chain: dummy.Pool-ThreadPoo, pool.map-_map_async.get-ApplyResult.get
+# MapResult(ApplyResult subclass) self._value = [None] * length, a list
 results = pool.map(urllib.request.urlopen, urls)
 # close the pool and wait for the work to finish
 pool.close()
 pool.join()
+# todo: print httpresponse contents
 print(results)
 
 print("use {0} seconds".format(datetime.datetime.now() - start))

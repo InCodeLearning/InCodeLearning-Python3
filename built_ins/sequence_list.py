@@ -13,19 +13,20 @@ print(queue)  # elements 1-6 shifted left by one O(n) time
 
 l = [True, 2, 3.5, 5 - 8j, [9, 7, 5], 'python', ('a', 2)]
 
-print(hex(id(l)))  # 0x2564cb0  memory address, may be different .
+print(hex(id(l)))  # 0x2564cb0  memory address (32 bit?), may be different .
 print(len(l))  # 7
-# list index
 
-print(l[0])  # True
-print(l[-7])  # True    a_list[-n] == a_list[len(a-list) - n]
-
-# slicing
+# slicing, not including the second slice index
 print(l[:5])  # [True, 2, 3.5, 5-8j, [9, 7, 5]],
-# not including the second slice index
+
+# list index
+print(l[0])  # True
+print(l[-7])  # True    list[-n] == list[len(list) - n]
+# print(l[-8]) Error, index out of range, not intuitive
 
 print(l[4:-1])  # [[9, 7, 5], 'python'], combination of pos & neg index
 print(l[4:-6])  # [], if 2nd slice index on the left of 1st one
+print("4:-8", l[4:-8])  # not intuitive, no error
 print(l[6:3])  # [], same reason as above one
 
 # method
@@ -87,6 +88,7 @@ print(ls == l2)  # True, the comparison is not address, but content
 l.reverse()
 print(l)  # [5, 4, 'python', 3.5, 2, True]
 
+# Todo compare shallow deepcopy
 l_new = l.copy()
 l_new2 = l[:]
 print(l_new, l_new2)
