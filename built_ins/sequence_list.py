@@ -95,3 +95,8 @@ print(l_new, l_new2)
 # [5, 4, 'python', 3.5, 2, True] [5, 4, 'python', 3.5, 2, True]
 print(hex(id(l)), hex(id(l_new)), hex(id(l_new2)))
 # memory addresses are different.
+
+
+# A tuple is an immutable list. Once it is created, it can not be changed.
+# Except the method, which will change the content of the List,
+# such as insert(), extend(), remove()etc, Tuple can use the methods of List.
