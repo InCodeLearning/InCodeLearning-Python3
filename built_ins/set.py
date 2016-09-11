@@ -16,9 +16,10 @@ print(s, len(s))  # {0, 1, 2, 3, 4, 'a', 'python'} 7
 s.update({2, 7, 9}, {5, "a", "C#"})
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 7, 'C#', 9, 'a', 'python'} 11
 
-# discard(e) returns None if element e not exist
-s.discard(9)
-s.discard(9)
+# discard(e) always returns None even if element e not exist
+print("s.discard(9) returns", s.discard(9))
+print("second time s.discard(9) returns", s.discard(9))
+
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 'python', 7, 'a', 'C#'} 10
 s.remove(4)
 print(s, len(s))  # {0, 1, 2, 3, 'python', 5, 7, 'C#', 'a'} 9
