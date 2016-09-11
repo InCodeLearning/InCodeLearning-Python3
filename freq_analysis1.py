@@ -1,4 +1,6 @@
 # coding=utf-8
+import timeit
+
 #  Crypto Analysis: Frequency Analysis
 # To analyze encrypted messages, to find out information about the possible
 # algorithm or even language of the clear text message, one could perform
@@ -13,6 +15,7 @@
 # for each of the letters a-z.
 # The normalized frequency is simply the number of occurrences, i,
 # divided by the total number of characters in the message, n.
+f_start = timeit.default_timer()
 
 
 def freq_analysis(message):
@@ -43,22 +46,45 @@ print(freq_analysis("adca"))
 # >>> [0.5, 0.0, 0.25, 0.25, 0.0, ..., 0.0]
 print("""""")
 print(freq_analysis('bewarethebunnies'))
-
-
 # >>> [0.0625, 0.125, 0.0, 0.0, ..., 0.0]
 
 
-#################################
+f_end = timeit.default_timer()
+cost = f_end - f_start
+print('Time cost for this function is %f' % cost)
 
 #################################
 
 #################################
 
 #################################
+
+#################################
+
 # A more efficiency way to do it.
+f_start = timeit.default_timer()
+
+
 def freq_analysis2(message):
     abc = 'abcdefghijklmnopqrstuvwxyz'
     freq_list = [0.0] * 26
     for i in message:
         freq_list[abc.find(i)] += 1.0 / len(message)
     return freq_list
+
+
+# Test Case
+
+print(freq_analysis2("abcd"))
+# >>> [0.25, 0.25, 0.25, 0.25, 0.0, ..., 0.0]
+print("""""")
+print(freq_analysis2("adca"))
+# >>> [0.5, 0.0, 0.25, 0.25, 0.0, ..., 0.0]
+print("""""")
+print(freq_analysis2('bewarethebunnies'))
+# >>> [0.0625, 0.125, 0.0, 0.0, ..., 0.0]
+
+
+f_end = timeit.default_timer()
+cost = f_end - f_start
+print('Time cost for this function is %f' % cost)
