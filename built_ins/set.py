@@ -16,6 +16,7 @@ print(s, len(s))  # {0, 1, 2, 3, 4, 'a', 'python'} 7
 s.update({2, 7, 9}, {5, "a", "C#"})
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 7, 'C#', 9, 'a', 'python'} 11
 
+# discard(e) returns None if element e not exist
 s.discard(9)
 s.discard(9)
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 'python', 7, 'a', 'C#'} 10
@@ -23,6 +24,8 @@ s.remove(4)
 print(s, len(s))  # {0, 1, 2, 3, 'python', 5, 7, 'C#', 'a'} 9
 # s.remove(4)    raise KeyError
 
+# pop() returns an arbitrary element
+# http://stackoverflow.com/questions/10432022/in-python-is-set-pop-deterministic
 print(s.pop())  # 0
 print(s.pop())  # 1
 # print(s.pop("C#"))  raise TypeError, no argument needed in pop method.
