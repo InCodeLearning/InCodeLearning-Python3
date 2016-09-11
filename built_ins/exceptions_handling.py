@@ -24,6 +24,9 @@ def divide(x, y):
     finally:
         print("executing finally clause")
 
+divide(3, 0)
+divide(4, 2)
+
 
 """
 Example(s):
@@ -170,11 +173,8 @@ def divide(x, y):
 # KeyboardInterrupt
 # =================
 
-# Don't run the following code if you don't know
-# how to interrupt the program from the keyboard.
-# Generally, it is Control-C, but this may vary
-# depending on your interpreter.
-
+# try Control-C or control-D
+# use ps -ef | grep exception, kill <process-id> in linux
 
 # while True:
 #     try:
