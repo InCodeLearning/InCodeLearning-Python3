@@ -31,3 +31,30 @@ print(add_or_minus(1, 2))
 # print(add_or_minus(add=False, 1, 2)) SyntaxError
 # benefit can swap positions with keywords
 print(add_or_minus(num2=2, num1=1, add=False))
+
+
+# multiple arguments
+def multiple_args(*args):
+    print("called with", len(args), "arguments:", args)
+    total = 0
+    for num in args:
+        total += num
+    print("sum =", total)
+    return total
+
+multiple_args(1)
+multiple_args(1, 2, 3, 4, 5)
+
+
+# multiple arguments and keyword arguments
+def multiple_key_args(*args, **kwargs):
+    length = len(args)
+    if 'limit' in kwargs.keys():
+        length = kwargs['limit']
+    total = 0
+    for i in range(0, length):
+        total += args[i]
+    return total
+
+print(multiple_key_args(1, 2, 3, 4, 5, nolimit=None, random=333))
+print(multiple_key_args(1, 2, 3, 4, 5, limit=3))
