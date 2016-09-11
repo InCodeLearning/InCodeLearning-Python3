@@ -1,4 +1,6 @@
 # usage of for else
+# else will only break out the first for loop, different java, c
+# use Eratosthenes sieve to find prime numbers in [1, 100]
 
 from math import sqrt
 
