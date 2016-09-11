@@ -49,6 +49,9 @@ print(X is Y)      # Same object anyhow: caching at work!
 
 
 # Python caches and reuses small integers and small strings
+# http://stackoverflow.com/questions/306313/
+# is-operator-behaves-unexpectedly-with-integers
+# and stackoverflow questions 15171695, 21091568
 # you can always ask Python how many references there are to an object:
 print(sys.getrefcount(1))
 # get different numbers on different systems
