@@ -31,6 +31,11 @@ jupyter nbconvert --to script <notebook.ipynb>
 ```
 You can set up a post save hook as indicated [at this link](http://jupyter-notebook.readthedocs.io/en/latest/extending/savehooks.html). If you do not already have a `jupyter_notebook_config.py` file in your home directory `~/.jupyter/`, you can generate one with `jupyter notebook --generate-config`.
 
+1. In bash shell, cd to the parent directory which contains your .ipyn file.
+2. Type <jupyter notebook> to start the application, a new tab will be opened in your browser automatically.
+3. In the home directory (which is the working directory where you type <jupyter notebook> to launch the application), you will find the all files in that directory.
+4. Click on the .ipyn file to open the file, or click New button on the upper right corner of the page to create a new file (.txt, terminal, or .ipyn file)
+
 # Resources
 
 - [official docs](https://docs.continuum.io/anaconda/)

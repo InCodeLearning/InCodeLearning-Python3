@@ -62,4 +62,8 @@ class RedirectStdoutTo:
 
 with open('out.log', mode='w', encoding='utf-8') as a_file:
     with RedirectStdoutTo(a_file):
-        print ('Stdout is redirected to a file')
+        print(u'Stdout is redirected to a file, 中文')
+
+# with open('out.log', mode='r') as a_file:
+with open('out.log', encoding='utf-8') as a_file:
+    print(a_file.read())
