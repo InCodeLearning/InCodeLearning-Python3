@@ -19,9 +19,10 @@ print(s, len(s))  # {0, 1, 2, 3, 4, 5, 7, 'C#', 9, 'a', 'python'} 11
 # discard(e) always returns None even if element e not exist
 print("s.discard(9) returns", s.discard(9))
 print("second time s.discard(9) returns", s.discard(9))
+# item not in set, no Error
 
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 'python', 7, 'a', 'C#'} 10
-s.remove(4)
+s.remove(4)    # item not in set, raise Error
 print(s, len(s))  # {0, 1, 2, 3, 'python', 5, 7, 'C#', 'a'} 9
 # s.remove(4)    raise KeyError
 
@@ -29,6 +30,7 @@ print(s, len(s))  # {0, 1, 2, 3, 'python', 5, 7, 'C#', 'a'} 9
 # http://stackoverflow.com/questions/10432022/in-python-is-set-pop-deterministic
 print(s.pop())  # 0
 print(s.pop())  # 1
+
 # print(s.pop("C#"))  raise TypeError, no argument needed in pop method.
 s.clear()
 print(s)  # set() empty set
@@ -55,7 +57,7 @@ print(b.issuperset(c))  # False
 will change its contents.
 """
 d = frozenset({2, 5, 3, 7, 10})
-print(d, len(d))   # frozenset({10, 3, 2, 5, 7}) 5
+print(d, len(d))   # frozenset({10, 3, 2, 5, 7}) 5 TODO frozenset order
 print(5 in d)     # True
 print(a.union(d))  # {1, 2, 3, 5, 7, 8, 10}
 print(a.difference(d))   # {8, 1}
