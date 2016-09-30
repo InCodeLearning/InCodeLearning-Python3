@@ -1,3 +1,35 @@
+"""Regular expression
+https://docs.python.org/3/howto/regex.html
+Regular expressions (called REs, or regexes, or regex patterns)
+are essentially a tiny, highly specialized programming language
+embedded inside Python and made available through the re module.
+Using this little language, you specify the rules for the set
+of possible strings that you want to match
+
+http://www.ucs.cam.ac.uk
+A regular expression is simply some means to write down a pattern
+describing some text.
+
+LP1: ^    \A    matches the beginning of a string
+     $    \Z    matches the end of a string
+LP2: \b    matches a word boundary
+LP3: \d    matches any numeric digit
+     \D    matches any non-numeric character
+     \s    matches any white space character (space, tab, ...)
+     \S    matches any non-white space character
+     \w    [0-9a-zA-Z_]    matches any "word character"
+     \W    [^0-9a-zA-Z_]   matches any non-word character
+LP6: x?    matches an optional x character
+     x*    matches x zero or more times
+     x+    matches x one or more times
+     x{n, m}    matches an x character at least n times, not more than m times
+LP7: (a|b|c)    matches either a or b or c
+LP8: (x) in general is a remembered group.
+
+http://www.pyregex.com/
+"""
+
+
 import re
 
 
@@ -16,6 +48,9 @@ x = re.search("cat", "A cat and a rat can't be friend.")
 print(x)
 
 x = re.search("cow", "A cat and a rat can't be friend.")
+print(x)
+
+x = re.match("cat", "A cat and a rat can't be friend.")
 print(x)
 
 # 3. Combine If logic
