@@ -7,6 +7,7 @@ from io import StringIO
 
 save_stdout = sys.stdout
 sys.stdout = StringIO()  # suppress output of import def_function
+# note this fails pep8 on purpose
 import def_function  # import a module
 sys.stdout = save_stdout
 

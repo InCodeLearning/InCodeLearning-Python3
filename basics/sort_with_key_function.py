@@ -34,7 +34,8 @@ def keyfunc2(x):
             int(x) % 2 == 1), x)
 print("".join(sorted(s, key=keyfunc2)))
 
-        print(x, (x.isdigit(), x.isdigit() and int(x) % 2 == 0, x.isupper(), x.islower()))
+print(x, (x.isdigit(), x.isdigit() and int(x) % 2 == 0,
+      x.isupper(), x.islower()))
 
 
 print('key=x')
