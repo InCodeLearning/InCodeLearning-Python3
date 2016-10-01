@@ -1,5 +1,5 @@
 # https://docs.python.org/3.6/library/itertools.html#module-itertools
-
+# These functions return iterators, which make looping more efficient
 from itertools import product, permutations
 
 # itertools.product()
@@ -64,6 +64,11 @@ print(*permutations(list("ABC")))
 # prints
 # ('A', 'B', 'C') ('A', 'C', 'B') ('B', 'A', 'C')
 # ('B', 'C', 'A') ('C', 'A', 'B') ('C', 'B', 'A')
+
+# compare product to permutation
+two_letters = list("AB")
+print(*product(two_letters, repeat=2))
+print(*permutations(two_letters))
 
 # permutations are printed in a lexicographic
 # sorted order.
