@@ -43,16 +43,6 @@ class Pep8Checker(PythonStyleChecker):
             for pep8_warning in pep8_message.splitlines():
                 LOGGER.warning(pep8_warning)
 
-logging.basicConfig(level=logging.INFO)
-LOGGER = logging.getLogger(__name__)
-IGNORED_FILES = set()
-CHECKERS = [Pep8Checker()]
-
-
-def _should_check(module):
-    module_name = os.path.basename(module)
-    return module.endswith('.py') and module_name not in IGNORED_FILES
-
 
 def _get_starting_directory(args):
     try:
@@ -61,9 +51,23 @@ def _get_starting_directory(args):
         base_directory = os.getcwd()
     return base_directory
 
+base_directory = _get_starting_directory(sys.argv)
+logging.basicConfig(level=logging.INFO)
+LOGGER = logging.getLogger(__name__)
+IGNORED_FILES = ('import_path.py', 'indentation.py')
+CHECKERS = [Pep8Checker()]
+
+
+def _should_check(module):
+    module_name = os.path.basename(module)
+    return module.endswith('.py') and module_name not in IGNORED_FILES
+
 
 def _run_checker(base_directory, checker):
     LOGGER.info('============Running %s============', checker.checker_name)
+    # (top, topdown=True, oneerror=None, followlinks=False)
+    # return a 3-tuple (dirpath, dirnames, filenames)
+    # can modify dirnames when topdown is True
     for root, _, files in os.walk(base_directory):
         for name in files:
             file_path = os.path.join(root, name)
@@ -77,7 +81,6 @@ def _run_checker(base_directory, checker):
 
 
 def main():
-    base_directory = _get_starting_directory(sys.argv)
     LOGGER.debug('Inspecting in directory %s...', base_directory)
     for checker in CHECKERS:
         _run_checker(base_directory, checker)
