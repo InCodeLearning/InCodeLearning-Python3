@@ -1,6 +1,9 @@
 # https://docs.python.org/3.6/library/itertools.html#module-itertools
 # These functions return iterators, which make looping more efficient
-from itertools import product, permutations
+
+from itertools import product, \
+    permutations, combinations, \
+    combinations_with_replacement
 
 # itertools.product()
 # ===================
@@ -81,3 +84,34 @@ print(*permutations(list("ACB"), 2))
 print(*permutations(list("ABC"), 2))
 # prints
 # ('A', 'B') ('A', 'C') ('B', 'A') ('B', 'C') ('C', 'A') ('C', 'B')
+
+
+# itertools.combinations()
+# ========================
+
+# itertools.combinations(iterable, r)
+# returns r length subsequences of elements
+# from the input iterable in lexicographic
+# sort order.
+
+print(*(combinations('12345', 2)))
+# prints
+# ('1', '2') ('1', '3') ('1', '4') ('1', '5') ('2', '3')
+# ('2', '4') ('2', '5') ('3', '4') ('3', '5') ('4', '5')
+
+
+# itertools.combinations_with_replacement()
+# =========================================
+
+# itertools.combinations_with_replacement(iterable, r)
+# returns r length subsequences of elements
+# from the input iterable allowing individual elements
+# to be repeated more than once in lexicographic order.
+
+D = [1, 1, 2]
+print(list(combinations(D, 2)))
+# prints
+# [(1, 1), (1, 2), (1, 2)]
+print(list(combinations_with_replacement(D, 2)))
+# prints
+# [(1, 1), (1, 1), (1, 2), (1, 1), (1, 2), (2, 2)]
