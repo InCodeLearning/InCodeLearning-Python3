@@ -2,8 +2,12 @@ import unittest
 # to use both python test.py and python -m unittest
 try:
     from . import everything_object
-except:
+# above works when running python -m unittest from repo base directory
+# or python -m basics.test_everything_object
+except SystemError:
     import everything_object
+# running python test_everyting_object.py in basics dir
+# for more see stackoverflow 16981921/relative-imports-in-python-3
 
 
 class TestEverythingObject(unittest.TestCase):
@@ -35,5 +39,9 @@ class TestEverythingObject(unittest.TestCase):
     def tearDown(self):
         self.fun_object = None
 
+# every module is an object having an attribute __name__
+print(everything_object.__name__)
+
+# necessary when running python basics/test_everything_object.py
 if __name__ == '__main__':
     unittest.main()
