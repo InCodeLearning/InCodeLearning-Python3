@@ -1,3 +1,6 @@
+import inspect
+
+print("=====functions starting with a=====")
 # abs() returns magnitude for complex number
 numbers = [-1, -2.3, complex(3, 4)]
 for n in numbers:
@@ -35,6 +38,7 @@ class Person:
 Tom = Person("male", 34)
 print(repr(Tom))
 
+print("=====functions starting with b=====")
 print(bin(10))
 print(bin(Tom))  # use __index__ of object
 
@@ -74,6 +78,7 @@ print("  with iterable", bytes([3, 4, 92, 116]))
 print(' ', bytes(rb'34\t') == bytes([3, 4, 92, 116]))        # False
 print(' ', bytes(b'\x03\x04\\t') == bytes([3, 4, 92, 116]))  # True
 
+print("=====functions starting with c=====")
 print("callable() since 3.2")
 
 
@@ -88,3 +93,33 @@ print("chr() dec int to character, valid 0 - 0x10FFFF")
 print(' ', chr(97))
 print(' ', ord('a'))
 # check wiki code point, 17 code planes, 17x2^16 = 1,114,112
+
+print("=====functions starting with i=====")
+# for CPython address of object in memory
+print(id(1))
+# 10105824 in win10ubuntu,  140474825689632 virtualbox-ubuntu
+print(id([1, 2, 3]))
+# 140076387922824 in win10ubuntu, 140587582331208 in virtualbox-ubuntu
+list1 = [10, 11, 12]
+print(id(list1))
+# 140587582331208, interesting that address did not change
+print(hex(id(list1)))
+# 0x7fdd18e79948 64 bit ubuntu
+
+print("=====functions starting with t=====")
+# type(object) returns a type object
+print(type(1))
+# print(1.__class__) confuse python parser
+print(1 .__class__, (1).__class__)
+# isinstance() recommended for testing type taking subclass into account
+print(type(1) == object)
+print(isinstance(1, object))
+# type(name, bases, dict)
+
+
+class test:
+    a = 1
+
+test_object = test()
+print(type(test_object))
+print(type('test', (object,), dict(a=1)))

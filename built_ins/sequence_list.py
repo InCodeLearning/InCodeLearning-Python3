@@ -13,7 +13,7 @@ print(queue)  # elements 1-6 shifted left by one O(n) time
 
 l = [True, 2, 3.5, 5 - 8j, [9, 7, 5], 'python', ('a', 2)]
 
-print(hex(id(l)))  # 0x2564cb0  memory address (32 bit?), may be different .
+print(hex(id(l)))  # 0x2564cb0  memory address (32 bit?), machine dependent.
 print(len(l))  # 7
 
 # slicing, not including the second slice index
