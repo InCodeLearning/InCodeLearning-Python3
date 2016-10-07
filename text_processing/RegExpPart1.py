@@ -105,5 +105,3 @@ print(re.sub('([^aeiou])y$', r'\1ies', 'vacancy'))
 # ([^aeiou])y$ the word that ends with not aeiou + y
 # \1 group 1; group 0 is the whole content
 # raise error if there is no parenthesis in .sub method, () forms group?
-
-
