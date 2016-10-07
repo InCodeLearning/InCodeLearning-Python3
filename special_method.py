@@ -5,6 +5,7 @@ The class can act like sequence, dict, function, iterator, or number.
 http://www.python-course.eu/python3_magic_methods.php
 """
 
+
 class Length:
 
     __metric = {
@@ -18,7 +19,7 @@ class Length:
         "mi": 1609.344
     }
 
-    def __init__(self, value, unit = 'm'):
+    def __init__(self, value, unit='m'):
         self.value = value
         self.unit = unit
 
@@ -46,4 +47,3 @@ if __name__ == "__main__":
 
     L = Length
     print(L(2.56, "m") + L(3, "yd") + L(7.8, "in") + L(7.03, "cm"))
-
