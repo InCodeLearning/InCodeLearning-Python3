@@ -32,10 +32,18 @@ class Person:
     def __repr__(self):
         return "[Person: " + self.gender + " " + str(self.age) + "]"
 
+    def __str__(self):
+        return self.gender + " " + str(self.age)
+
     def __index__(self):
         return self.age
 
 Tom = Person("male", 34)
+print(Tom)      # calls __str__
+print((Tom,))   # computer in REPL calls __repr__
+# calls __str__ of tuple then calls __repr__ on contents
+# same result if __str__ not defined in Person
+# stackoverflow 18393701
 print(repr(Tom))
 
 print("=====functions starting with b=====")
@@ -77,6 +85,7 @@ print("  with bytes literal", bytes(rb'34\t'))
 print("  with iterable", bytes([3, 4, 92, 116]))
 print(' ', bytes(rb'34\t') == bytes([3, 4, 92, 116]))        # False
 print(' ', bytes(b'\x03\x04\\t') == bytes([3, 4, 92, 116]))  # True
+print(' ', bytes(b'\x33\x34\\t') == bytes(rb'34\t'))         # True
 
 print("=====functions starting with c=====")
 print("callable() since 3.2")
