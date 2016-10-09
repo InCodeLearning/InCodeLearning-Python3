@@ -1,4 +1,6 @@
-# Boolean
+import fractions
+import math
+# 1. Boolean
 
 
 # class must be defined before use
@@ -102,3 +104,29 @@ print(24, __eq__(p1, p2))
 print(25, __ne__(p1, p2))
 print(26, __gt__(p1, p2))
 print(27, __ge__(p1, p2))
+
+# 2. Numbers
+
+print("=====numbers=====")
+print(type(1))
+print(type(1.0))
+print(type(1 + 1.0))   # coerce into float
+
+# floating points accurate to 15 decimal places
+print(float(2))
+# int() truncates towards 0
+print(int(-2.5))
+# py2 has int/long, int limited by sys.maxint usually 2^32-1, PEP237
+print(11 / 2)
+# py2 / usually integer division unless from __future__ import division
+# or python -Qnew foo.py todo find source/meaning of -Qnew
+# py3 / means floating point division, pep238
+
+# python directives __future__ pep236, pep263 coding in comment encoding
+print(11 // 2)  # same in py2 py3
+print(-11 // 2, 11 // -2)    # different in Java, C
+
+print(fractions.Fraction(6, 4))
+print(math.pi)
+print(math.sin(math.pi / 2))
+print(math.tan(math.pi / 4))   # python does not have infinite precision
