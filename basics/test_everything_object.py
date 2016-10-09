@@ -41,6 +41,7 @@ class TestEverythingObject(unittest.TestCase):
 
 # every module is an object having an attribute __name__
 print(everything_object.__name__)
+print(__name__)
 
 # necessary when running python basics/test_everything_object.py
 if __name__ == '__main__':
