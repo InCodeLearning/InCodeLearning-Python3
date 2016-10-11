@@ -53,6 +53,9 @@ print(x)
 x = re.match("cat", "A cat and a rat can't be friend.")
 print(x)
 
+# will match from start of string
+print(re.match("A cat", "A cat and a rat can't be friend."))
+
 # 3. Combine If logic
 print("*********** If RegEx                ************")
 if re.search("cat", "A cat and a rat can't be friend."):
