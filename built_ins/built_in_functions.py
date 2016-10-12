@@ -115,6 +115,17 @@ print(id(list1))
 print(hex(id(list1)))
 # 0x7fdd18e79948 64 bit ubuntu
 
+print("=====functions starting with l=====")
+# class list([iterable]) rather than being a function, list is a type
+print(list({1:2, 3:6}))    # interesting, just took the keys out
+
+print("=====functions starting with r=====")
+# class range(stop), range(start, stop[,step])
+print(*range(5))
+# print(range(5.0, 10.0, 0.5)) TypeError
+print(*range(5, 15))
+print(*range(5, 15, 2))
+
 print("=====functions starting with t=====")
 # type(object) returns a type object
 print(type(1))
@@ -124,6 +135,9 @@ print(1 .__class__, (1).__class__)
 print(type(1) == object)
 print(isinstance(1, object))
 # type(name, bases, dict)
+
+# class tuple([iterable])
+print(tuple({1:2, 3:6}))
 
 
 class test:

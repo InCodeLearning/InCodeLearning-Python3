@@ -20,8 +20,9 @@ print(d[(1,)])    # 1
 print(d['2nd'])    # 2
 print(d[3])    # [3, 3.0]
 print(d[frozenset({4, 5})])    # {'5th', 4}
+d['2nd'] = '2nd'
+print(d)
 
-# dict methods
 print("=====dict methods=====")
 # delete k-v pair method, no remove method
 del d['pybook']
