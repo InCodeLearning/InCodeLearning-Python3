@@ -1,13 +1,24 @@
 """ Key word for set: unordered, unique value, any datatypes, curly bracket
     {} is a dict, not set, empty set expression set(), including no argument.
     two sets comparison: union, intersection, difference.
+    underlying data structure: hashset, hashtable.
 """
+
+print("======set creation======")
+a_list = ['a', 'b', 'a', 'mpilgrim', True, False, 42]
+a_set = set(a_list)   # instantiating a set
+print(a_set)
+
+# py2 legacy {} is empty dict
+print("empty set", set(), type(set()))
+print("empty dict", {}, type({}))
 
 s = set(i for i in range(5))
 print(s, len(s))  # {0, 1, 2, 3, 4} 5
 print(4 in s)  # True
 print(5 in s)  # False
 
+print("======adding elements to set======")
 s.add("a")
 s.add("python")
 print(s, len(s))  # {0, 1, 2, 3, 4, 'a', 'python'} 7
@@ -15,7 +26,18 @@ s.add(4)
 print(s, len(s))  # {0, 1, 2, 3, 4, 'a', 'python'} 7
 s.update({2, 7, 9}, {5, "a", "C#"})
 print(s, len(s))  # {0, 1, 2, 3, 4, 5, 7, 'C#', 9, 'a', 'python'} 11
+try:
+    s.add([1])
+except TypeError:
+    print("set elements must be immutable/hashable")
 
+print(a_set.update({'a', 'c', 43}))   # returns None
+print(a_set)
+a_set.update({'f'}, {32})
+a_set.update(['l', '1', 23])
+print(a_set)
+
+print("======removing set elements======")
 # discard(e) always returns None even if element e not exist
 print("s.discard(9) returns", s.discard(9))
 print("second time s.discard(9) returns", s.discard(9))
@@ -45,6 +67,7 @@ print(a.union(b), b.union(a))  # {1, 2, 4, 5, 6, 8, 9} {1, 2, 4, 5, 6, 8, 9}
 print(a.intersection(b), b.intersection(a))  # {2} {2}
 print(a.symmetric_difference(b), b.symmetric_difference(a))
 # {1, 4, 5, 6, 8, 9} {1, 4, 5, 6, 8, 9}
+# only difference is not symmetric
 print(a.difference(b), b.difference(a))  # {8, 1, 5} {9, 4, 6}
 
 c = {2, 5}

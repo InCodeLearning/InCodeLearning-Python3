@@ -29,7 +29,8 @@ print(l[4:-6])  # [], if 2nd slice index on the left of 1st one
 print("4:-8", l[4:-8])  # not intuitive, no error
 print(l[6:3])  # [], same reason as above one
 
-# method
+print("======adding items to a list======")
+print(l + ['concat', 'at', 'end'])    # list concat, create a new list
 l.append([1, 2, 3])  # add a sublist
 print(l)
 # [True, 2, 3.5, (5-8j), [9, 7, 5], 'python', ('a', 2), [1, 2, 3]]
@@ -41,14 +42,25 @@ print(l)
 l.insert(0, 'a')  # assign item to specific position
 print(l)
 
+print("======searching for values in a list======")
 print(l.count('a'))  # 2, return # how many items that item shows in the list
 print(l.count(2))  # 1, item in the sublist is not counted
 
 print(l.index('a'))  # return to the first match item
 
+# -1 is valid index for list, raise exception is better than return -1
+try:
+    print('a is in l', l.index('a'))
+    print(l.index('not in l'))
+except ValueError:
+    print('"not in l" is not in l')
+
+print("======removing list items======")
 l.remove('a')  # delete the first match item
 print(l)
 # [True, 2, 3.5, (5-8j), [9, 7, 5], 'python', ('a', 2), [1, 2, 3], 4, 5, 'a']
+
+del l[1]
 
 l.pop()  # remove the last item
 print(l)
