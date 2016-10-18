@@ -2,7 +2,7 @@
 
 # usage of defaultdict and & in sets
 
-from collections import defaultdict
+from data_types.collections import defaultdict
 
 a = [[1, 2], [3, 4], [3, 6]]
 b = [[1, 2], [2, 3], [3, 5]]
