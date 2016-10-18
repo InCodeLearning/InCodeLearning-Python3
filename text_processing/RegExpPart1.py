@@ -100,3 +100,11 @@ print("Back reference .group():", mo.group())
 print("Back reference .group(0):", mo.group(0))
 print("Back reference group(1):", mo.group(1))
 print("Back reference group(2):", mo.group(2))
+
+print(re.search('[^aeiou]y$', 'vacancy'))
+# not raise error
+
+print(re.sub('([^aeiou])y$', r'\1ies', 'vacancy'))
+# ([^aeiou])y$ the word that ends with not aeiou + y
+# \1 group 1; group 0 is the whole content
+# raise error if there is no parenthesis in .sub method, () forms group
