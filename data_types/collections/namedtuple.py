@@ -49,7 +49,7 @@ for bad_typename in (
     try:
         BadTypename = namedtuple(bad_typename, 'type shape')
     except ValueError as error:
-        message = 'Got error for bad_typename={}: {}'.format(bad_typename, error.message)
+        message = 'Got error for bad_typename={}: {}'.format(bad_typename, str(error))
         print(message)
 
 # starting with underscore is fine
@@ -78,7 +78,7 @@ for bad_fieldname in (
     try:
         BadFieldNameAnimal = namedtuple('Animal', bad_fieldname)
     except ValueError as error:
-        message = 'Got error for bad_fieldname={}: {}'.format(bad_fieldname, error.message)
+        message = 'Got error for bad_fieldname={}: {}'.format(bad_fieldname, str(error))
         print(message)
 
 
