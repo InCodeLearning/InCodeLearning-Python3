@@ -1,5 +1,5 @@
 """
-https://docs.python.org/3.5/library/collections.html?highlight=collections#namedtuple-factory-function-for-tuples-with-named-fields
+https://docs.python.org/3.5/library/collections.html?highlight=collections
 
 8.3.5. namedtuple() Factory Function for Tuples with Named Fields
 """
@@ -7,13 +7,13 @@ https://docs.python.org/3.5/library/collections.html?highlight=collections#named
 from collections import namedtuple
 
 
-#######################################################################################################################
+##############################################################################
 # purpose:
 # - assign meaning to each position in a tuple
 #   - can be used as a tuple
 #   - can be accessed by field names
 
-#######################################################################################################################
+##############################################################################
 #  creation
 # creates a tuple subclass
 
@@ -49,7 +49,8 @@ for bad_typename in (
     try:
         BadTypename = namedtuple(bad_typename, 'type shape')
     except ValueError as error:
-        message = 'Got error for bad_typename={}: {}'.format(bad_typename, str(error))
+        message = 'Got error for bad_typename={}: {}'.format(bad_typename,
+                                                             str(error))
         print(message)
 
 # starting with underscore is fine
@@ -78,7 +79,8 @@ for bad_fieldname in (
     try:
         BadFieldNameAnimal = namedtuple('Animal', bad_fieldname)
     except ValueError as error:
-        message = 'Got error for bad_fieldname={}: {}'.format(bad_fieldname, str(error))
+        message = 'Got error for bad_fieldname={}: {}'.format(bad_fieldname,
+                                                              str(error))
         print(message)
 
 
