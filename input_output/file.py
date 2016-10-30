@@ -29,6 +29,7 @@ LP2 stream objects from non-file sources
 """
 import gzip
 import io
+import sys
 
 # read a .txt file
 a_file = open('example.txt', encoding='gb2312')
@@ -64,8 +65,11 @@ with open('test.log', encoding='utf-8') as b_file:
 with open('test.log', mode='a', encoding='utf-8') as b_file:
     b_file.write('\nand again.')
 
+# open return an stream object with many methods
 with open('test.log', encoding='utf-8') as b_file:
-    print(b_file.read())
+    print("stream object.name =" + a_file.name)
+    print("stream object.encoding = " + a_file.encoding)
+    print("stream object.mode = " + a_file.mode)
 
 # read binary file.
 with open('dog.jpg', mode='rb') as an_image:
@@ -86,7 +90,7 @@ c_string = 'PapayaWhip is the new black.'
 c_file = io.StringIO(c_string)
 c_file.read()
 c_file.seek(0)
-c_file.read(10)
+print(c_file.read(10))
 c_file.tell()
 
 # io.StringIO treat a string as a .txt file;
@@ -101,3 +105,24 @@ with gzip.open('out.log.gz', mode='wb') as z_file:
 
 with gzip.open('out.log.gz', mode='rb') as z_file:
     print(z_file.read())
+
+
+# redirect stdout to a file
+class RedirectStdoutTo:
+    def __init__(self, out_new):
+        self.out_new = out_new
+
+    def __enter__(self):
+        self.out_old = sys.stdout
+        sys.stdout = self.out_new
+
+    def __exit__(self, *args):
+        sys.stdout = self.out_old
+
+with open('out.log', mode='w', encoding='utf-8') as a_file:
+    with RedirectStdoutTo(a_file):
+        print(u'Stdout is redirected to a file')
+
+# with open('out.log', mode='r') as a_file:
+with open('out.log', encoding='utf-8') as a_file:
+    print(a_file.read())
