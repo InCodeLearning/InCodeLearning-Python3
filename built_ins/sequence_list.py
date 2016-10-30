@@ -17,6 +17,7 @@ print(hex(id(l)))  # 0x2564cb0  memory address (32 bit?), machine dependent.
 print(len(l))  # 7
 
 # slicing, not including the second slice index
+# todo check slicing copy deepcopy or shallow copy?
 print(l[:5])  # [True, 2, 3.5, 5-8j, [9, 7, 5]],
 
 # list index
@@ -49,6 +50,7 @@ print(l.count(2))  # 1, item in the sublist is not counted
 print(l.index('a'))  # return to the first match item
 
 # -1 is valid index for list, raise exception is better than return -1
+# maybe related to slicing __slice_, itertools.islice
 try:
     print('a is in l', l.index('a'))
     print(l.index('not in l'))

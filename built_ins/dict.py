@@ -50,11 +50,11 @@ print(d.items())  # list of tuples wrapped dict_items()
 d1 = d.copy()    # shallow copy
 d['4th'] = 4
 d[3].append(1.3)
-print('d:', d)     # {3: [3, 3.0], (1,): 1, '2nd': 2, '4th': 4}
+print('d:', d)     # {3: [3, 3.0, 1.3], (1,): 1, '2nd': 2, '4th': 4}
 print('d shallow copy', d1)
-# {3: [3, 3.0], '4th': 'four', '2nd': 2, (1,): 1}
+# {3: [3, 3.0, 1.3], '4th': 'four', '2nd': 2, (1,): 1}
 print(d.get('4th'))   # 4   TODO make sure whether is d.get(key) same as d[key]
-print(d.popitem())    # (3, [3, 3.0])   TODO find out pop order
+print(d.popitem())    # (3, [3, 3.0, 1.3])   TODO find out pop order
 print(d.get(5))     # None, default default is None
 # stackoverflow 7423428/python-dict-get-vs-setdefault
 # TODO compare with defaultdict
