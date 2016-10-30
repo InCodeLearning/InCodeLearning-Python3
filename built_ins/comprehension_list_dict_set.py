@@ -33,7 +33,7 @@ matrix = [
           [7, 8, 9],
          ]
 print('transpose', [[row[i] for row in matrix] for i in [0, 1, 2]])
-print(list(zip(*matrix))  # equivalent built-in zip function
+print(list(zip(*matrix)))  # equivalent built-in zip function
 
 print("======dict comprehension======")
 a_dict = {'a': 1, 'b': 2, 'c': 3}
