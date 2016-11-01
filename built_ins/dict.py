@@ -47,9 +47,17 @@ print(d.keys())    # dict_keys([3, (1,), '2nd', '4th'])
 print(d.values())    # dict_values([[3, 3.0], 'four', 1, 2])
 print(d.items())  # list of tuples wrapped dict_items()
 # dict_items([(3, [3, 3.0]), ('2nd', 2), ((1,), 1), ('4th', 'four')])
+
+# looping technique, dict_items is a view object which reflect dict's changes
+dict_d_view = d.items()
+
 d1 = d.copy()    # shallow copy
 d['4th'] = 4
 d[3].append(1.3)
+
+print("contents in view object should also be changed")
+for k, v in dict_d_view:
+    print(k, v)
 print('d:', d)     # {3: [3, 3.0, 1.3], (1,): 1, '2nd': 2, '4th': 4}
 print('d shallow copy', d1)
 # {3: [3, 3.0, 1.3], '4th': 'four', '2nd': 2, (1,): 1}
