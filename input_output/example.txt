@@ -1,0 +1,2 @@
+Dive Into Python 是为有经验的程序员编写的一本 Python书。
+Dive Into Python is a Python book for experienced developer。
