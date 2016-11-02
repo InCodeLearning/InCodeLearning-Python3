@@ -30,6 +30,28 @@ LP2 stream objects from non-file sources
 import gzip
 import io
 import sys
+import pkgutil
+import os
+import encodings
+
+
+def all_encodings():
+    modnames = set(
+        [modname for importer, modname, ispkg in pkgutil.walk_packages(
+            path=[os.path.dirname(encodings.__file__)], prefix='')])
+    aliases = set(encodings.aliases.aliases.values())
+    return modnames.union(aliases)
+
+filename = 'example.txt'
+encodings = all_encodings()
+for enc in encodings:
+    try:
+        with open(filename, encoding=enc) as f:
+            # print the encoding and the first 500 characters
+            print("=====", enc, "=====") 
+            print(f.read(500))
+    except Exception:
+        pass
 
 # read a .txt file
 a_file = open('example.txt', encoding='gb2312')

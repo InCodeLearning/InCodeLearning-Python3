@@ -1,0 +1,289 @@
+===== iso8859_9 =====
+Dive Into Python ÊÇÎªÓĞ¾­ÑéµÄ³ÌĞòÔ±±àĞ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== latin_1 =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== raw_unicode_escape =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== kz1048 =====
+Dive Into Python КЗОҒУРң­СйµДіМРтФ±±аРөµДТ»±ң PythonКйҰӘ
+Dive Into Python is a Python book for experienced developerҰӘ
+===== cp273 =====
+àÑÎÁñ>È?&`ÈÇ?>­Gó¡Lü´ÝJZ@D·¦ü2M££Öü©@DK|£´&`ÈÇ?>­ZßtàÑÎÁñ>È?&`ÈÇ?>ÑË/&`ÈÇ?>Â??,Ã?ÊÁÌøÁÊÑÁ>[ÁÀÀÁÎÁ%?øÁÊßt
+===== cp875 =====
+ΔΫΌΧΙ> ?&` Ϊ?>­G‘νL}χπJZίDήΐ}2Mάά\}ϊίDKτάχ&` Ϊ?>­Z~tΔΫΌΧΙ> ?&` Ϊ?>ΫΉ/&` Ϊ?>Τ??,Ψ?ΈΧΏ¨ΧΈΫΧ>ΥΧΦΦΧΌΧ%?¨ΧΈ~t
+===== johab =====
+===== cp950 =====
+Dive Into Python 岆峈衄冪桄腔最唗埜晤迡腔珨掛 Python抎﹝
+Dive Into Python is a Python book for experienced developer﹝
+===== utf_16_be =====
+䑩癥⁉湴漠偹瑨潮⃊쟎꫓킾귑쒳쳐놱뒵쓒뮱븠偹瑨潮쫩ꆣ੄楶攠䥮瑯⁐祴桯渠楳⁡⁐祴桯渠扯潫⁦潲⁥硰敲楥湣敤⁤敶敬潰敲ꆣ
+===== koi8_u =====
+Dive Into Python йгн╙сп╬ґяИ╣дЁлпРт╠╠ЮпЄ╣др╩╠╬ PythonйИ║ё
+Dive Into Python is a Python book for experienced developer║ё
+===== cp1253 =====
+===== undefined =====
+===== cp863 =====
+Dive Into Python ╩╟╬¬╙╨╛¾╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θ´ú
+Dive Into Python is a Python book for experienced developer´ú
+===== ptcp154 =====
+Dive Into Python КЗОӘУРҫӯСйөДіМРтФұұаРҙөДТ»ұҫ PythonКйЎЈ
+Dive Into Python is a Python book for experienced developerЎЈ
+===== unicode_internal =====
+===== iso8859_11 =====
+Dive Into Python สวฮชำะพญั้ตฤณฬะ๒ิฑฑเะดตฤาปฑพ Pythonส้กฃ
+Dive Into Python is a Python book for experienced developerกฃ
+===== cp858 =====
+Dive Into Python ╩Ã╬¬Ëð¥¡ÐÚÁ─│╠ð‗È▒▒Óð┤Á─Ê╗▒¥ Python╩Úíú
+Dive Into Python is a Python book for experienced developeríú
+===== cp775 =====
+Dive Into Python ╩Ū╬¬ėąŠŁčķĄ─│╠ą“į▒▒Óą┤Ą─ę╗▒Š Python╩ķĪŻ
+Dive Into Python is a Python book for experienced developerĪŻ
+===== cp860 =====
+Dive Into Python ╩╟╬¬╙╨╛¡╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θíú
+Dive Into Python is a Python book for experienced developeríú
+===== iso8859_16 =====
+Dive Into Python ÊÇÎȘÓĐŸ­Ńé”ÄłÌĐòÔ±±àĐŽ”ÄÒ»±Ÿ PythonÊéĄŁ
+Dive Into Python is a Python book for experienced developerĄŁ
+===== utf_32 =====
+===== cp037 =====
+àÑÎÁñ>È?&`ÈÇ?>­Gó¡L}´ÝJZ§D·ö}2M££\}©§DK]£´&`ÈÇ?>­Z~tàÑÎÁñ>È?&`ÈÇ?>ÑË/&`ÈÇ?>Â??,Ã?ÊÁÌøÁÊÑÁ>ÄÁÀÀÁÎÁ%?øÁÊ~t
+===== punycode =====
+===== iso8859_2 =====
+Dive Into Python ĘÇÎŞÓĐž­ŃéľÄłĚĐňÔąąŕĐ´ľÄŇťąž PythonĘéĄŁ
+Dive Into Python is a Python book for experienced developerĄŁ
+===== cp855 =====
+Dive Into Python ╩К╬фМлЙГЛжх─│╠лЫн▒▒Ял┤х─м╗▒Й Python╩жАБ
+Dive Into Python is a Python book for experienced developerАБ
+===== iso2022_jp_1 =====
+===== cp424 =====
+===== cp1255 =====
+===== cp856 =====
+===== gbk =====
+Dive Into Python 是为有经验的程序员编写的一本 Python书。
+Dive Into Python is a Python book for experienced developer。
+===== tis_620 =====
+Dive Into Python สวฮชำะพญั้ตฤณฬะ๒ิฑฑเะดตฤาปฑพ Pythonส้กฃ
+Dive Into Python is a Python book for experienced developerกฃ
+===== iso8859_1 =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== cp1125 =====
+Dive Into Python ╩╟╬к╙╨╛н╤щ╡─│╠╨Ґ╘▒▒р╨┤╡─╥╗▒╛ Python╩щбг
+Dive Into Python is a Python book for experienced developerбг
+===== utf_16 =====
+===== cp1026 =====
+àÑÎÁñ>È?&ıÈ[?>­Gó¡Lğ´$JZ§D·~ğ2M££üğ©§DK|£´&ıÈ[?>­ZötàÑÎÁñ>È?&ıÈ[?>ÑË/&ıÈ[?>Â??,Ã?ÊÁÌøÁÊÑÁ>ÄÁÀÀÁÎÁ%?øÁÊöt
+===== cp949 =====
+Dive Into Python 角槨唐쒔駱돨넋埼逃긍畇돨寧굶 Python蝎。
+Dive Into Python is a Python book for experienced developer。
+===== euc_jisx0213 =====
+Dive Into Python 頁葎嗤将刮議殻會埀園亟議匯云 Python慕。
+Dive Into Python is a Python book for experienced developer。
+===== palmos =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== cp850 =====
+Dive Into Python ╩Ã╬¬Ëð¥¡ÐÚÁ─│╠ð‗È▒▒Óð┤Á─Ê╗▒¥ Python╩Úíú
+Dive Into Python is a Python book for experienced developeríú
+===== cp1256 =====
+Dive Into Python تاخھسذ¾­رéµؤ³جذٍش±±àذ´µؤز»±¾ Pythonتé،£
+Dive Into Python is a Python book for experienced developer،£
+===== charmap =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== unicode_escape =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== cp437 =====
+Dive Into Python ╩╟╬¬╙╨╛¡╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θíú
+Dive Into Python is a Python book for experienced developeríú
+===== iso2022_jp_3 =====
+===== gb2312 =====
+Dive Into Python 是为有经验的程序员编写的一本 Python书。
+Dive Into Python is a Python book for experienced developer。
+===== utf_32_le =====
+===== utf_16_le =====
+楄敶䤠瑮⁯祐桴湯쨠컇펪뻐톭뗩도탌퓲놱탠떴틄놻₾祐桴湯ꎡ䐊癩⁥湉潴倠瑹潨⁮獩愠倠瑹潨⁮潢歯映牯攠灸牥敩据摥搠癥汥灯牥ꎡ
+===== cp874 =====
+Dive Into Python สวฮชำะพญั้ตฤณฬะ๒ิฑฑเะดตฤาปฑพ Pythonส้กฃ
+Dive Into Python is a Python book for experienced developerกฃ
+===== cp861 =====
+Dive Into Python ╩╟╬¬╙╨╛¡╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θíú
+Dive Into Python is a Python book for experienced developeríú
+===== iso8859_6 =====
+===== iso8859_7 =====
+===== cp1006 =====
+Dive Into Python ﮌﮄﺳ۹ﺽﺷﺝ­ﺹﻠﭖﺥﺏﮊﺷﮨﺿﺎﺎﻓﺷﺑﭖﺥﺻﭨﺎﺝ Pythonﮌﻠ۰۲
+Dive Into Python is a Python book for experienced developer۰۲
+===== shift_jisx0213 =====
+Dive Into Python ﾊﾇﾎｪﾓﾐｾｭﾑ魴ﾄｳﾌﾐ惛ｱｱ獎ｴｵﾄﾒｻｱｾ Pythonﾊ鬘｣
+Dive Into Python is a Python book for experienced developer｡｣
+===== euc_jis_2004 =====
+Dive Into Python 頁葎嗤将刮議殻會埀園亟議匯云 Python慕。
+Dive Into Python is a Python book for experienced developer。
+===== gb18030 =====
+Dive Into Python 是为有经验的程序员编写的一本 Python书。
+Dive Into Python is a Python book for experienced developer。
+===== big5hkscs =====
+Dive Into Python 岆峈衄冪桄腔最唗埜晤迡腔珨掛 Python抎﹝
+Dive Into Python is a Python book for experienced developer﹝
+===== iso8859_4 =====
+Dive Into Python ĘĮÎĒĶĐž­ŅéĩÄŗĖĐōÔąąāĐ´ĩÄŌģąž PythonĘéĄŖ
+Dive Into Python is a Python book for experienced developerĄŖ
+===== cp1140 =====
+àÑÎÁñ>È?&`ÈÇ?>­Gó¡L}´ÝJZ§D·ö}2M££\}©§DK]£´&`ÈÇ?>­Z~tàÑÎÁñ>È?&`ÈÇ?>ÑË/&`ÈÇ?>Â??,Ã?ÊÁÌøÁÊÑÁ>ÄÁÀÀÁÎÁ%?øÁÊ~t
+===== euc_kr =====
+Dive Into Python 角槨唐쒔駱돨넋埼逃긍畇돨寧굶 Python蝎。
+Dive Into Python is a Python book for experienced developer。
+===== mac_turkish =====
+Dive Into Python  «Œ™”–æ≠—Èµƒ≥Ã–Ú‘±±‡–¥µƒ“ª±æ Python È°£
+Dive Into Python is a Python book for experienced developer°£
+===== cp862 =====
+Dive Into Python ╩╟╬¬╙╨╛¡╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θíú
+Dive Into Python is a Python book for experienced developeríú
+===== mac_farsi =====
+Dive Into Python تاخ*سذ>-رى۵ؤ۳جذْش۱۱ـذ۴۵ؤز؛۱> Pythonتى!#
+Dive Into Python is a Python book for experienced developer!#
+===== cp864 =====
+Dive Into Python ﺗﺍﺧﺕﺳﺫﺹﺝﺭﻯ٥ﺅ٣ﺟﺫﻥﺷ١١ـﺫ٤٥ﺅﺯ؛١ﺹ Pythonﺗﻯ­£
+Dive Into Python is a Python book for experienced developer­£
+===== mac_roman =====
+Dive Into Python  «Œ™”–æ≠—Èµƒ≥Ã–Ú‘±±‡–¥µƒ“ª±æ Python È°£
+Dive Into Python is a Python book for experienced developer°£
+===== iso8859_5 =====
+Dive Into Python ЪЧЮЊгаО­бщЕФГЬађдББраДЕФвЛБО PythonЪщЁЃ
+Dive Into Python is a Python book for experienced developerЁЃ
+===== shift_jis_2004 =====
+Dive Into Python ﾊﾇﾎｪﾓﾐｾｭﾑ魴ﾄｳﾌﾐ惛ｱｱ獎ｴｵﾄﾒｻｱｾ Pythonﾊ鬘｣
+Dive Into Python is a Python book for experienced developer｡｣
+===== big5 =====
+Dive Into Python 岆峈衄冪桄腔最唗埜晤迡腔珨掛 Python抎﹝
+Dive Into Python is a Python book for experienced developer﹝
+===== cp720 =====
+Dive Into Python ╩╟╬ز╙╨╛ص╤ل╡─│╠╨ٌ╘▒▒ض╨┤╡─╥╗▒╛ Python╩لةث
+Dive Into Python is a Python book for experienced developerةث
+===== cp866 =====
+Dive Into Python ╩╟╬к╙╨╛н╤щ╡─│╠╨Є╘▒▒р╨┤╡─╥╗▒╛ Python╩щбг
+Dive Into Python is a Python book for experienced developerбг
+===== utf_8_sig =====
+===== cp869 =====
+Dive Into Python ╩Ρ╬ΗΧΤΟΙΥοΚ─│╠ΤυΨ▒▒ζΤ┤Κ─Φ╗▒Ο Python╩οΐύ
+Dive Into Python is a Python book for experienced developerΐύ
+===== koi8_t =====
+===== mac_latin2 =====
+Dive Into Python  «ő™”–ĺ≠—ťĶń≥Ő–Ú‘ĪĪŗ–īĶń“ĽĪĺ Python ť°£
+Dive Into Python is a Python book for experienced developer°£
+===== utf_8 =====
+===== mac_romanian =====
+Dive Into Python  «Œ™”–ă≠—Èµƒ≥Ã–Ú‘±±‡–¥µƒ“ª±ă Python È°£
+Dive Into Python is a Python book for experienced developer°£
+===== cp857 =====
+===== cp932 =====
+Dive Into Python ﾊﾇﾎｪﾓﾐｾｭﾑ魴ﾄｳﾌﾐｱｱ獎ｴｵﾄﾒｻｱｾ Pythonﾊ鬘｣
+Dive Into Python is a Python book for experienced developer｡｣
+===== iso2022_jp_2 =====
+===== hz =====
+===== cp1252 =====
+Dive Into Python ÊÇÎªÓÐ¾­ÑéµÄ³ÌÐòÔ±±àÐ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== iso2022_jp_2004 =====
+===== koi8_r =====
+Dive Into Python йгн╙сп╬╜яИ╣дЁлпРт╠╠Юп╢╣др╩╠╬ PythonйИ║ё
+Dive Into Python is a Python book for experienced developer║ё
+===== cp1257 =====
+===== iso8859_15 =====
+Dive Into Python ÊÇÎªÓÐŸ­ÑéµÄ³ÌÐòÔ±±àÐŽµÄÒ»±Ÿ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== cp500 =====
+àÑÎÁñ>È?&`ÈÇ?>­Gó¡L}´ÝJZ§D·ö}2M££\}©§DK|£´&`ÈÇ?>­Z~tàÑÎÁñ>È?&`ÈÇ?>ÑË/&`ÈÇ?>Â??,Ã?ÊÁÌøÁÊÑÁ>ÄÁÀÀÁÎÁ%?øÁÊ~t
+===== utf_7 =====
+===== iso8859_3 =====
+===== cp1258 =====
+Dive Into Python ÊÇÎªÓĐ¾­ÑéµÄ³̀Đ̣Ô±±àĐ´µÄ̉»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== ascii =====
+===== iso8859_14 =====
+Dive Into Python ÊÇÎẂÓŴẅ­ÑéṁÄġÌŴòÔḟḟàŴṀṁÄÒṠḟẅ PythonÊéḂ£
+Dive Into Python is a Python book for experienced developerḂ£
+===== cp865 =====
+Dive Into Python ╩╟╬¬╙╨╛¡╤Θ╡─│╠╨≥╘▒▒α╨┤╡─╥╗▒╛ Python╩Θíú
+Dive Into Python is a Python book for experienced developeríú
+===== mac_iceland =====
+Dive Into Python  «Œ™”–æ≠—Èµƒ≥Ã–Ú‘±±ý–¥µƒ“ª±æ Python È°£
+Dive Into Python is a Python book for experienced developer°£
+===== mac_arabic =====
+Dive Into Python تاخ*سذ>-رى٥ؤ٣جذْش١١ـذ٤٥ؤز؛١> Pythonتى!#
+Dive Into Python is a Python book for experienced developer!#
+===== mac_croatian =====
+Dive Into Python  «Œ™”Đž≠—Èµƒ≥ÃĐÚ‘±±–Đ∆µƒ“ª±ž Python È°£
+Dive Into Python is a Python book for experienced developer°£
+===== cp737 =====
+Dive Into Python ╩╟╬ς╙╨╛φ╤ώ╡─│╠╨≥╘▒▒ω╨┤╡─╥╗▒╛ Python╩ώκμ
+Dive Into Python is a Python book for experienced developerκμ
+===== iso2022_jp =====
+===== cp1254 =====
+Dive Into Python ÊÇÎªÓĞ¾­ÑéµÄ³ÌĞòÔ±±àĞ´µÄÒ»±¾ PythonÊé¡£
+Dive Into Python is a Python book for experienced developer¡£
+===== utf_32_be =====
+===== iso2022_jp_ext =====
+===== cp1250 =====
+Dive Into Python ĘÇÎŞÓĐľ­ŃéµÄłĚĐňÔ±±ŕĐ´µÄŇ»±ľ PythonĘéˇŁ
+Dive Into Python is a Python book for experienced developerˇŁ
+===== iso8859_8 =====
+===== cp852 =====
+Dive Into Python ╩ă╬¬ËđżşĐÚÁ─│╠đ˛ď▒▒Óđ┤Á─Ď╗▒ż Python╩Úíú
+Dive Into Python is a Python book for experienced developeríú
+===== iso2022_kr =====
+===== cp1251 =====
+Dive Into Python КЗОЄУРѕ­СйµДіМРтФ±±аРґµДТ»±ѕ PythonКйЎЈ
+Dive Into Python is a Python book for experienced developerЎЈ
+===== idna =====
+===== shift_jis =====
+===== euc_jp =====
+Dive Into Python 頁葎嗤将刮議殻會埀園亟議匯云 Python慕。
+Dive Into Python is a Python book for experienced developer。
+===== iso8859_13 =====
+Dive Into Python ŹĒĪŖÓŠ¾­ŃéµÄ³ĢŠņŌ±±ąŠ“µÄŅ»±¾ PythonŹé”£
+Dive Into Python is a Python book for experienced developer”£
+===== mac_centeuro =====
+Dive Into Python  «ő™”–ĺ≠—ťĶń≥Ő–Ú‘ĪĪŗ–īĶń“ĽĪĺ Python ť°£
+Dive Into Python is a Python book for experienced developer°£
+===== mac_cyrillic =====
+Dive Into Python  «ќ™”–Њ≠—йµƒ≥ћ–т‘±±а–іµƒ“ї±Њ Python й°£
+Dive Into Python is a Python book for experienced developer°£
+===== hp_roman8 =====
+Dive Into Python òúöˆÆÅƒÙîÕçá°äÅ·åÝÝÁÅÇçáØ£Ýƒ PythonòÕÀÈ
+Dive Into Python is a Python book for experienced developerÀÈ
+===== iso8859_10 =====
+Dive Into Python ĘĮÎŠÓÐū­ŅéĩÄģĖÐōÔąąāÐīĩÄŌŧąū PythonĘéĄĢ
+Dive Into Python is a Python book for experienced developerĄĢ
+===== mac_greek =====
+Dive Into Python  «ΈΣ”–Ψ≠―ιΒΡ≥Χ–ρ‘±±ύ–¥ΒΡ“Μ±Ψ Python ιΓΘ
+Dive Into Python is a Python book for experienced developerΓΘ
+Dive Into Python 是为有经验的程序员编写的一本 Python书。
+Dive Into Python is a Python book for experienced developer。
+Dive Into Python
+ 
+是
+20
+True
+   1 Dive Into Python 是为有经验的程序员编写的一本 Python书。
+   2 Dive Into Python is a Python book for experienced developer。
+test succeeded.
+stream object.name =example.txt
+stream object.encoding = gb2312
+stream object.mode = r
+rb
+dog.jpg
+0
+b'BM\xf2'
+3
+<class 'bytes'>
+45810
+PapayaWhip
+b'A nine mile walk is no joke, especially in the rain.'
+Stdout is redirected to a file
+
