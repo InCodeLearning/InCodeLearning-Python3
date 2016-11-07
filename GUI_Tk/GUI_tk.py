@@ -39,11 +39,11 @@ button1.grid(row=2)
 c1 = Checkbutton(bottom, text="Keep me log in")
 c1.grid(row=2, column=1)
 
-menubar = Menu(mainwd)
+menubar = Menu(mainwd)  # create menu bar
 
-filemenu = Menu(menubar)   # create menu bar
+filemenu = Menu(menubar)
 menubar.add_cascade(label='File', menu=filemenu)  # add File menu
-filemenu.add_command(label='New', command=cmd)  # File menu content
+filemenu.add_command(label='New', command=cmd)  # add File menu content
 filemenu.add_command(label='Open', command=cmd)
 filemenu.add_separator()
 filemenu.add_command(label='Exit', command=quit)
