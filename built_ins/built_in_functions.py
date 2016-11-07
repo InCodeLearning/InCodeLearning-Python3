@@ -103,6 +103,12 @@ print(' ', chr(97))
 print(' ', ord('a'))
 # check wiki code point, 17 code planes, 17x2^16 = 1,114,112
 
+print("=====fuctions starting with e=====")
+list_enum = enumerate(['Spring', 'Summer', 'Fall', 'Winter'], start=11)
+print(list_enum.__next__())
+for i, season in list_enum:
+    print(i, season)
+
 print("=====functions starting with i=====")
 # for CPython address of object in memory
 print(id(1))
@@ -126,6 +132,12 @@ print(*range(5))
 print(*range(5, 15))
 print(*range(5, 15, 2))
 
+print("=====functions starting with s=====")
+tokens = "This is just a test string from Jesse".split()
+print(tokens)
+print(sorted(tokens, key=str.lower, reverse=True))  # case insensitive sorting
+print("original tokens list not changed", tokens)
+
 print("=====functions starting with t=====")
 # type(object) returns a type object
 print(type(1))
@@ -147,3 +159,10 @@ class test:
 test_object = test()
 print(type(test_object))
 print(type('test', (object,), dict(a=1)))
+
+print("=====functions starting with z=====")
+list1 = [1, 2, 3, 4]  # note 4 is ignored
+list2 = [4, 5, 6]
+list3 = [7, 8, 9]
+zipped = zip(list1, list2, list3)
+print(*zipped)
